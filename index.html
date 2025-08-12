@@ -23,14 +23,43 @@
                             <div class="pt-6">
                                 <p class="mx-5 text-left">Domina la IA y transforma la manera en que gestionas tu clínica veterinaria.
 En esta masterclass gratuita y en vivo descubrirás cómo la inteligencia artificial puede ayudarte a automatizar tareas repetitivas, optimizar tu tiempo y brindar una atención más personalizada a tus pacientes.</p>
-                                <div id="mc_embed_shell" class="border-2 border-dashed border-opacity-15 border-zinc-950 inline-flex mb-7 mt-4 pl-0">
+                                <div id="mc_embed_shell" class="border-2 border-dashed border-opacity-15 border-zinc-950 mb-7 mt-4 pl-0 w-full max-w-2xl mx-auto p-4">
                                     <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
                                     <style type="text/css">
-        #mc_embed_signup{background:#fff; false;clear:left; font:14px Helvetica,Arial,sans-serif; width: 600px;}
-        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>
-                                    <div id="mc_embed_signup" class="border-gray-800 border-solid">
+        /* Contenedor principal del formulario: 100% ancho, con límite y box-sizing */
+        #mc_embed_signup {
+            background: #fff;
+            clear: left;
+            font: 14px Helvetica, Arial, sans-serif;
+            width: 100%;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+        /* Inputs y campos a 100% del ancho disponible */
+        #mc_embed_signup .mc-field-group input,
+        #mc_embed_signup input[type="email"],
+        #mc_embed_signup input[type="text"],
+        #mc_embed_signup input[type="tel"] {
+            width: 100%;
+            box-sizing: border-box;
+        }
+        /* Pie del formulario en columna en pantallas pequeñas */
+        #mc_embed_signup .clear.foot {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+        #mc_embed_signup .button {
+            width: 100%;
+        }
+        /* A partir de 640px, permitir botón auto y layout más ancho */
+        @media (min-width: 640px) {
+            #mc_embed_signup .button {
+                width: auto;
+            }
+        }
+                                    </style>
+                                    <div id="mc_embed_signup" class="border-gray-800 border-solid w-full">
                                         <form action="https://app.us16.list-manage.com/subscribe/post?u=c9e7b06728de26c3ebb6c7079&amp;id=8e2a1345f8&amp;f_id=00e9c2e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
                                             <div id="mc_embed_signup_scroll">
                                                 <h2>Introduce tu correo</h2>
