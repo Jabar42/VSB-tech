@@ -12,6 +12,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HealthAI Marketing - Marketing Digital e IA para el Sector Salud</title>
         <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Calendly Badge Widget -->
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
         <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
         body { font-family: 'Inter', sans-serif; }
@@ -126,7 +129,7 @@
                         Testimonios <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-teal-600 transition-all duration-300 group-hover:w-full"></span> </a><a href="#contacto" class="text-gray-700 hover:text-blue-700 transition-all duration-300 font-medium relative group">
                         Contacto <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-teal-600 transition-all duration-300 group-hover:w-full"></span> </a>
                     </div>
-                    <button class="btn-primary text-white px-8 py-3 rounded-xl font-semibold shadow-lg"><span class="flex items-center space-x-2"> <span>📞</span> <span>Consulta Gratis</span> </span>
+                    <button onclick="openCalendly()" class="btn-primary text-white px-8 py-3 rounded-xl font-semibold shadow-lg"><span class="flex items-center space-x-2"> <span>📞</span> <span>Consulta Gratis</span> </span>
                     </button>
                 </div>
             </nav>
@@ -444,7 +447,7 @@
                         </div>
                     </div>
                     <div class="flex flex-col sm:flex-row gap-6 justify-center">
-                        <button onclick="scrollToSection('contacto')" class="bg-gradient-to-r from-cyan-400 to-emerald-400 text-gray-900 px-12 py-6 rounded-2xl font-bold text-xl hover:shadow-2xl transition-all duration-300 ai-glow"><span class="flex items-center justify-center space-x-3"> <span>📞</span> <span>Consulta Gratuita</span> </span>
+                        <button onclick="openCalendly()" class="bg-gradient-to-r from-cyan-400 to-emerald-400 text-gray-900 px-12 py-6 rounded-2xl font-bold text-xl hover:shadow-2xl transition-all duration-300 ai-glow"><span class="flex items-center justify-center space-x-3"> <span>📞</span> <span>Consulta Gratuita</span> </span>
                         </button>
                         <button onclick="openWhatsApp()" class="border-2 border-white/50 backdrop-blur-sm text-white px-12 py-6 rounded-2xl font-bold text-xl hover:bg-white/20 hover:border-white transition-all duration-300"><span class="flex items-center justify-center space-x-3"> <span>💬</span> <span>WhatsApp Directo</span> </span>
                         </button>
@@ -613,6 +616,14 @@
 
         function openWhatsApp() {
             window.open('https://wa.me/34600123456?text=Hola, soy profesional médico y me interesa conocer más sobre sus servicios de marketing digital e IA especializados en salud', '_blank');
+        }
+
+        function openCalendly() {
+            if (window.Calendly) {
+                Calendly.initPopupWidget({ url: 'https://calendly.com/vsb-tech/30min' });
+            } else {
+                window.location.href = 'https://calendly.com/vsb-tech/30min';
+            }
         }
 
         function handleSubmit(event) {
