@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediTech AI - Integraciones de IA Médica para Profesionales de la Salud</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .pulse-animation { animation: pulse 2s infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.7; } }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">🏥</span>
+                    </div>
+                    <span class="text-2xl font-bold text-gray-800">MediTech AI</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#servicios" class="text-gray-600 hover:text-blue-600 transition-colors">Servicios</a>
+                    <a href="#soluciones" class="text-gray-600 hover:text-blue-600 transition-colors">Soluciones</a>
+                    <a href="#casos" class="text-gray-600 hover:text-blue-600 transition-colors">Casos de Éxito</a>
+                    <a href="#contacto" class="text-gray-600 hover:text-blue-600 transition-colors">Contacto</a>
+                </div>
+                <button class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                    Consulta Gratuita
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white pt-24 pb-16">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                Automatiza tu Consulta<br>
+                <span class="text-yellow-300">Multiplica tus Pacientes</span>
+            </h1>
+            <p class="text-xl mb-8 max-w-3xl mx-auto opacity-90">
+                Integraciones de IA médica avanzada para revolucionar tu práctica profesional. 
+                Desde diagnósticos asistidos hasta gestión completa de pacientes y marketing automatizado.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg font-semibold hover:bg-yellow-300 transition-colors text-lg">
+                    🚀 Comenzar Ahora
+                </button>
+                <button class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-gray-900 transition-colors text-lg">
+                    📞 Agendar Demo
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problemas que Resolvemos -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">¿Te Identificas con Estos Problemas?</h2>
+                <p class="text-xl text-gray-600">Los principales desafíos que enfrentan los profesionales médicos hoy</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-6 bg-red-50 rounded-xl">
+                    <div class="text-4xl mb-4">⏰</div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Falta de Tiempo</h3>
+                    <p class="text-gray-600">Demasiadas tareas administrativas que te alejan de tus pacientes</p>
+                </div>
+                <div class="text-center p-6 bg-orange-50 rounded-xl">
+                    <div class="text-4xl mb-4">📉</div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Pocos Pacientes Nuevos</h3>
+                    <p class="text-gray-600">Dificultad para atraer y retener pacientes en un mercado competitivo</p>
+                </div>
+                <div class="text-center p-6 bg-yellow-50 rounded-xl">
+                    <div class="text-4xl mb-4">📱</div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Tecnología Obsoleta</h3>
+                    <p class="text-gray-600">Sistemas desactualizados que no se comunican entre sí</p>
+                </div>
+                <div class="text-center p-6 bg-blue-50 rounded-xl">
+                    <div class="text-4xl mb-4">💰</div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Costos Elevados</h3>
+                    <p class="text-gray-600">Marketing ineficiente que no genera retorno de inversión</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Integraciones de IA Médica Completas</h2>
+                <p class="text-xl text-gray-600">Desde diagnósticos asistidos hasta marketing automatizado - Todo integrado</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover">
+                    <div class="text-4xl mb-4">🩺</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">IA Diagnóstica Asistida</h3>
+                    <p class="text-gray-600 mb-6">Análisis inteligente de síntomas, imágenes médicas y patrones para apoyar tus diagnósticos</p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>✓ Análisis de radiografías</li>
+                        <li>✓ Detección de patrones</li>
+                        <li>✓ Sugerencias diagnósticas</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover">
+                    <div class="text-4xl mb-4">📋</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Historiales Médicos IA</h3>
+                    <p class="text-gray-600 mb-6">Gestión inteligente de expedientes con análisis predictivo y alertas automáticas</p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>✓ Transcripción automática</li>
+                        <li>✓ Alertas de medicamentos</li>
+                        <li>✓ Análisis de tendencias</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover">
+                    <div class="text-4xl mb-4">🧬</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Análisis de Laboratorio IA</h3>
+                    <p class="text-gray-600 mb-6">Interpretación automática de resultados de laboratorio con correlaciones clínicas</p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>✓ Interpretación automática</li>
+                        <li>✓ Valores de referencia dinámicos</li>
+                        <li>✓ Correlaciones clínicas</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover">
+                    <div class="text-4xl mb-4">🤖</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Asistente Virtual Médico</h3>
+                    <p class="text-gray-600 mb-6">IA conversacional especializada en triaje, citas y consultas médicas básicas</p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>✓ Triaje inteligente 24/7</li>
+                        <li>✓ Agendamiento automático</li>
+                        <li>✓ Consultas básicas</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover">
+                    <div class="text-4xl mb-4">📊</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Marketing Médico IA</h3>
+                    <p class="text-gray-600 mb-6">Campañas automatizadas basadas en datos médicos y comportamiento de pacientes</p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>✓ Segmentación por patologías</li>
+                        <li>✓ Recordatorios preventivos</li>
+                        <li>✓ Campañas estacionales</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover">
+                    <div class="text-4xl mb-4">🔗</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Integración Total</h3>
+                    <p class="text-gray-600 mb-6">Conectamos todos tus sistemas médicos, administrativos y de marketing en una sola plataforma</p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>✓ EMR + CRM + Marketing</li>
+                        <li>✓ Equipos médicos IoT</li>
+                        <li>✓ Laboratorios externos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Especialidades -->
+    <section id="soluciones" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Especializados en tu Área</h2>
+                <p class="text-xl text-gray-600">Soluciones personalizadas para cada especialidad médica</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl">
+                    <div class="flex items-center mb-6">
+                        <div class="text-4xl mr-4">🏥</div>
+                        <h3 class="text-2xl font-bold text-gray-800">Medicina Humana</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span>IA Diagnóstica y Radiología</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span>Análisis Predictivo de Salud</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span>Monitoreo Remoto de Pacientes</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span>Gestión Inteligente de Expedientes</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span>Marketing Médico Automatizado</li>
+                    </ul>
+                </div>
+                <div class="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-2xl">
+                    <div class="flex items-center mb-6">
+                        <div class="text-4xl mr-4">🐕</div>
+                        <h3 class="text-2xl font-bold text-gray-800">Medicina Veterinaria</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span>Diagnóstico por Imagen Veterinaria</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span>Análisis de Comportamiento Animal</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span>Monitoreo de Signos Vitales</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span>Gestión de Vacunación IA</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span>Marketing para Dueños de Mascotas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculadora ROI -->
+    <section class="py-16 bg-gradient-to-r from-green-50 to-blue-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Calcula tu ROI en 30 Segundos</h2>
+                <p class="text-xl text-gray-600">Descubre cuánto puedes ahorrar y ganar con nuestras integraciones de IA</p>
+            </div>
+            <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl p-8">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Datos de tu Práctica</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Pacientes por mes</label>
+                                <input type="number" id="pacientes" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="200" value="200">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Precio promedio por consulta ($)</label>
+                                <input type="number" id="precio" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="80" value="80">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Horas administrativas por día</label>
+                                <input type="number" id="horas" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="4" value="4">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">% de No-Shows actual</label>
+                                <input type="number" id="noshows" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="25" value="25">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gradient-to-br from-blue-600 to-purple-600 text-white p-6 rounded-xl">
+                        <h3 class="text-2xl font-bold mb-6">Tu ROI Proyectado</h3>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center border-b border-white/20 pb-2">
+                                <span>Ingresos adicionales/mes:</span>
+                                <span class="font-bold text-xl" id="ingresos">$12,000</span>
+                            </div>
+                            <div class="flex justify-between items-center border-b border-white/20 pb-2">
+                                <span>Tiempo ahorrado/mes:</span>
+                                <span class="font-bold text-xl" id="tiempo">60 horas</span>
+                            </div>
+                            <div class="flex justify-between items-center border-b border-white/20 pb-2">
+                                <span>Reducción No-Shows:</span>
+                                <span class="font-bold text-xl" id="reduccion">75%</span>
+                            </div>
+                            <div class="flex justify-between items-center pt-4">
+                                <span class="text-lg">ROI Anual:</span>
+                                <span class="font-bold text-3xl text-yellow-300" id="roi">450%</span>
+                            </div>
+                        </div>
+                        <button class="w-full bg-yellow-400 text-gray-900 py-3 px-6 rounded-lg font-semibold hover:bg-yellow-300 transition-colors mt-6">
+                            🚀 Obtener Estos Resultados
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Casos de Éxito -->
+    <section id="casos" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Casos de Éxito Reales</h2>
+                <p class="text-xl text-gray-600">Resultados comprobados de nuestros clientes</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                    <div class="text-5xl font-bold text-blue-600 mb-2">300%</div>
+                    <div class="text-lg font-semibold text-gray-800 mb-2">Aumento en Citas</div>
+                    <p class="text-gray-600">Clínica Veterinaria San Martín aumentó sus citas mensuales de 200 a 800</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                    <div class="text-5xl font-bold text-green-600 mb-2">75%</div>
+                    <div class="text-lg font-semibold text-gray-800 mb-2">Reducción de No-Shows</div>
+                    <p class="text-gray-600">Dr. García redujo las ausencias de pacientes del 30% al 7%</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                    <div class="text-5xl font-bold text-purple-600 mb-2">5h</div>
+                    <div class="text-lg font-semibold text-gray-800 mb-2">Tiempo Ahorrado Diario</div>
+                    <p class="text-gray-600">Hospital Veterinario Central automatizó tareas administrativas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Lo que Dicen Nuestros Clientes</h2>
+                <p class="text-xl text-gray-600">Más de 500 profesionales médicos confían en nosotros</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-xl card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-16 h-16 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full flex items-center justify-center text-white font-bold mr-4 text-lg">
+                            👩‍⚕️
+                        </div>
+                        <div>
+                            <div class="font-semibold text-gray-800">Dr. María González</div>
+                            <div class="text-gray-600">Medicina Interna - CDMX</div>
+                            <div class="text-yellow-500 text-sm">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic mb-4">"Desde que implementamos el asistente de IA, mis pacientes pueden agendar citas las 24 horas. He recuperado 3 horas diarias que ahora dedico completamente a la atención médica."</p>
+                    <div class="bg-blue-100 p-3 rounded-lg">
+                        <div class="text-sm text-blue-800 font-semibold">Resultados en 3 meses:</div>
+                        <div class="text-sm text-blue-700">• +40% pacientes nuevos</div>
+                        <div class="text-sm text-blue-700">• 3 horas/día ahorradas</div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-16 h-16 bg-gradient-to-r from-green-400 to-green-600 rounded-full flex items-center justify-center text-white font-bold mr-4 text-lg">
+                            👨‍⚕️
+                        </div>
+                        <div>
+                            <div class="font-semibold text-gray-800">Dr. Juan Rodríguez</div>
+                            <div class="text-gray-600">Veterinario - Guadalajara</div>
+                            <div class="text-yellow-500 text-sm">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic mb-4">"El marketing automatizado ha triplicado mis pacientes nuevos. El sistema identifica automáticamente las mascotas que necesitan vacunas y envía recordatorios personalizados."</p>
+                    <div class="bg-green-100 p-3 rounded-lg">
+                        <div class="text-sm text-green-800 font-semibold">Resultados en 6 meses:</div>
+                        <div class="text-sm text-green-700">• +300% citas mensuales</div>
+                        <div class="text-sm text-green-700">• 85% menos no-shows</div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-16 h-16 bg-gradient-to-r from-purple-400 to-purple-600 rounded-full flex items-center justify-center text-white font-bold mr-4 text-lg">
+                            👩‍⚕️
+                        </div>
+                        <div>
+                            <div class="font-semibold text-gray-800">Dra. Ana Martínez</div>
+                            <div class="text-gray-600">Cardióloga - Monterrey</div>
+                            <div class="text-yellow-500 text-sm">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic mb-4">"La IA diagnóstica me ha ayudado a detectar patrones que antes pasaba por alto. Mis pacientes se sienten más seguros y mi precisión diagnóstica ha mejorado significativamente."</p>
+                    <div class="bg-purple-100 p-3 rounded-lg">
+                        <div class="text-sm text-purple-800 font-semibold">Resultados en 4 meses:</div>
+                        <div class="text-sm text-purple-700">• +25% precisión diagnóstica</div>
+                        <div class="text-sm text-purple-700">• 50% menos tiempo por consulta</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Precios -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Planes de Inversión</h2>
+                <p class="text-xl text-gray-600">Soluciones escalables para cada tipo de práctica médica</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Plan Básico -->
+                <div class="bg-white border-2 border-gray-200 rounded-2xl p-8 card-hover">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Básico</h3>
+                        <p class="text-gray-600 mb-4">Ideal para consultorios pequeños</p>
+                        <div class="text-4xl font-bold text-gray-800 mb-2">$299</div>
+                        <div class="text-gray-600">/mes</div>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span>Asistente Virtual IA</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span>Agendamiento Automático</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span>Recordatorios Inteligentes</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span>Hasta 500 pacientes</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span>Soporte por email</li>
+                    </ul>
+                    <button class="w-full bg-gray-800 text-white py-3 px-6 rounded-lg font-semibold hover:bg-gray-700 transition-colors">
+                        Comenzar Prueba Gratuita
+                    </button>
+                </div>
+
+                <!-- Plan Profesional -->
+                <div class="bg-gradient-to-br from-blue-600 to-purple-600 text-white rounded-2xl p-8 card-hover relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-yellow-400 text-gray-900 px-4 py-1 rounded-full text-sm font-semibold">MÁS POPULAR</span>
+                    </div>
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold mb-2">Profesional</h3>
+                        <p class="opacity-90 mb-4">Para clínicas y hospitales</p>
+                        <div class="text-4xl font-bold mb-2">$599</div>
+                        <div class="opacity-90">/mes</div>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center"><span class="text-yellow-300 mr-3">✓</span>Todo del plan Básico</li>
+                        <li class="flex items-center"><span class="text-yellow-300 mr-3">✓</span>IA Diagnóstica Asistida</li>
+                        <li class="flex items-center"><span class="text-yellow-300 mr-3">✓</span>Historiales Médicos IA</li>
+                        <li class="flex items-center"><span class="text-yellow-300 mr-3">✓</span>Marketing Automatizado</li>
+                        <li class="flex items-center"><span class="text-yellow-300 mr-3">✓</span>Hasta 2,000 pacientes</li>
+                        <li class="flex items-center"><span class="text-yellow-300 mr-3">✓</span>Soporte prioritario</li>
+                    </ul>
+                    <button class="w-full bg-yellow-400 text-gray-900 py-3 px-6 rounded-lg font-semibold hover:bg-yellow-300 transition-colors">
+                        Comenzar Prueba Gratuita
+                    </button>
+                </div>
+
+                <!-- Plan Enterprise -->
+                <div class="bg-white border-2 border-gray-200 rounded-2xl p-8 card-hover">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Enterprise</h3>
+                        <p class="text-gray-600 mb-4">Para grandes organizaciones</p>
+                        <div class="text-4xl font-bold text-gray-800 mb-2">$1,299</div>
+                        <div class="text-gray-600">/mes</div>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span>Todo del plan Profesional</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span>Análisis de Laboratorio IA</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span>Integración Total</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span>App Personalizada</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span>Pacientes ilimitados</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span>Soporte 24/7</li>
+                    </ul>
+                    <button class="w-full bg-gray-800 text-white py-3 px-6 rounded-lg font-semibold hover:bg-gray-700 transition-colors">
+                        Contactar Ventas
+                    </button>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <p class="text-gray-600 mb-4">🛡️ Garantía de 30 días o te devolvemos tu dinero</p>
+                <p class="text-sm text-gray-500">Todos los planes incluyen: Cumplimiento HIPAA • Encriptación end-to-end • Migración gratuita de datos</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Preguntas Frecuentes</h2>
+                <p class="text-xl text-gray-600">Resolvemos tus dudas más comunes</p>
+            </div>
+            <div class="max-w-4xl mx-auto space-y-6">
+                <div class="bg-white rounded-xl p-6 shadow-lg">
+                    <div class="flex justify-between items-center cursor-pointer" onclick="toggleFAQ(1)">
+                        <h3 class="text-lg font-semibold text-gray-800">¿Qué tan segura es la IA con los datos médicos?</h3>
+                        <span class="text-2xl text-gray-400" id="icon1">+</span>
+                    </div>
+                    <div class="mt-4 text-gray-600 hidden" id="answer1">
+                        Cumplimos con todas las normativas HIPAA y utilizamos encriptación end-to-end. Nuestros servidores están certificados SOC 2 Type II y nunca almacenamos datos sensibles sin autorización explícita.
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-lg">
+                    <div class="flex justify-between items-center cursor-pointer" onclick="toggleFAQ(2)">
+                        <h3 class="text-lg font-semibold text-gray-800">¿Cuánto tiempo toma la implementación?</h3>
+                        <span class="text-2xl text-gray-400" id="icon2">+</span>
+                    </div>
+                    <div class="mt-4 text-gray-600 hidden" id="answer2">
+                        La implementación básica toma entre 2-4 semanas. Para integraciones complejas, puede extenderse a 6-8 semanas. Incluimos capacitación completa y migración de datos sin costo adicional.
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-lg">
+                    <div class="flex justify-between items-center cursor-pointer" onclick="toggleFAQ(3)">
+                        <h3 class="text-lg font-semibold text-gray-800">¿La IA puede reemplazar mi criterio médico?</h3>
+                        <span class="text-2xl text-gray-400" id="icon3">+</span>
+                    </div>
+                    <div class="mt-4 text-gray-600 hidden" id="answer3">
+                        No. Nuestra IA es una herramienta de apoyo que te proporciona información adicional para tomar mejores decisiones. El diagnóstico y tratamiento final siempre queda en tus manos como profesional médico.
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-lg">
+                    <div class="flex justify-between items-center cursor-pointer" onclick="toggleFAQ(4)">
+                        <h3 class="text-lg font-semibold text-gray-800">¿Qué pasa si no veo resultados?</h3>
+                        <span class="text-2xl text-gray-400" id="icon4">+</span>
+                    </div>
+                    <div class="mt-4 text-gray-600 hidden" id="answer4">
+                        Ofrecemos una garantía de 30 días. Si no ves mejoras medibles en eficiencia o ingresos, te devolvemos el 100% de tu inversión. Además, nuestro equipo trabaja contigo para asegurar el éxito.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proceso -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Nuestro Proceso de Implementación</h2>
+                <p class="text-xl text-gray-600">Simple, rápido y sin interrumpir tu práctica</p>
+            </div>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">1</div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Análisis Gratuito</h3>
+                    <p class="text-gray-600">Evaluamos tu práctica actual y identificamos oportunidades de mejora</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">2</div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Propuesta Personalizada</h3>
+                    <p class="text-gray-600">Diseñamos una solución específica para tus necesidades y presupuesto</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">3</div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Implementación</h3>
+                    <p class="text-gray-600">Instalamos y configuramos todo sin interrumpir tu trabajo diario</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">4</div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Soporte Continuo</h3>
+                    <p class="text-gray-600">Te acompañamos con capacitación y soporte técnico permanente</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificaciones -->
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-8">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">Certificaciones y Cumplimiento</h3>
+                <p class="text-gray-600">Tecnología médica certificada y segura</p>
+            </div>
+            <div class="flex flex-wrap justify-center items-center gap-8 opacity-70">
+                <div class="flex items-center space-x-2 bg-white px-4 py-2 rounded-lg shadow">
+                    <span class="text-2xl">🛡️</span>
+                    <span class="font-semibold text-gray-700">HIPAA Compliant</span>
+                </div>
+                <div class="flex items-center space-x-2 bg-white px-4 py-2 rounded-lg shadow">
+                    <span class="text-2xl">🔒</span>
+                    <span class="font-semibold text-gray-700">SOC 2 Type II</span>
+                </div>
+                <div class="flex items-center space-x-2 bg-white px-4 py-2 rounded-lg shadow">
+                    <span class="text-2xl">⚕️</span>
+                    <span class="font-semibold text-gray-700">FDA Registered</span>
+                </div>
+                <div class="flex items-center space-x-2 bg-white px-4 py-2 rounded-lg shadow">
+                    <span class="text-2xl">🌐</span>
+                    <span class="font-semibold text-gray-700">ISO 27001</span>
+                </div>
+                <div class="flex items-center space-x-2 bg-white px-4 py-2 rounded-lg shadow">
+                    <span class="text-2xl">🇲🇽</span>
+                    <span class="font-semibold text-gray-700">COFEPRIS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-6">¿Listo para Transformar tu Práctica Médica?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto opacity-90">
+                Únete a más de 500 profesionales médicos que ya están ahorrando tiempo y aumentando sus ingresos con nuestras soluciones de IA
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                <button class="bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg font-semibold hover:bg-yellow-300 transition-colors text-lg pulse-animation">
+                    🎯 Consulta Gratuita (30 min)
+                </button>
+                <button class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-gray-900 transition-colors text-lg">
+                    📧 Recibir Información
+                </button>
+            </div>
+            <div class="text-sm opacity-75">
+                ✓ Sin compromiso ✓ Análisis gratuito ✓ Resultados garantizados
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto" class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">🏥</span>
+                        </div>
+                        <span class="text-2xl font-bold">MediTech AI</span>
+                    </div>
+                    <p class="text-gray-400">Revolucionando la práctica médica con integraciones de IA avanzada para diagnósticos, gestión de pacientes y marketing automatizado.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Servicios</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>IA Diagnóstica Asistida</li>
+                        <li>Historiales Médicos IA</li>
+                        <li>Análisis de Laboratorio</li>
+                        <li>Marketing Médico IA</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Especialidades</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Medicina Humana</li>
+                        <li>Medicina Veterinaria</li>
+                        <li>Clínicas y Hospitales</li>
+                        <li>Consultorios Privados</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contacto</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>📧 info@meditechai.com</li>
+                        <li>📱 +1 (555) 123-4567</li>
+                        <li>🌐 www.meditechai.com</li>
+                        <li>📍 Ciudad de México, México</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 MediTech AI. Todos los derechos reservados. | Cumplimiento HIPAA | Política de Privacidad</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling para los enlaces de navegación
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animación de números en los casos de éxito
+        function animateNumbers() {
+            const numbers = document.querySelectorAll('.text-5xl');
+            numbers.forEach(number => {
+                const finalNumber = parseInt(number.textContent);
+                let currentNumber = 0;
+                const increment = finalNumber / 50;
+                const timer = setInterval(() => {
+                    currentNumber += increment;
+                    if (currentNumber >= finalNumber) {
+                        number.textContent = finalNumber + (number.textContent.includes('%') ? '%' : number.textContent.includes('h') ? 'h' : '');
+                        clearInterval(timer);
+                    } else {
+                        number.textContent = Math.floor(currentNumber) + (number.textContent.includes('%') ? '%' : number.textContent.includes('h') ? 'h' : '');
+                    }
+                }, 50);
+            });
+        }
+
+        // Intersection Observer para animar números cuando sean visibles
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateNumbers();
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        const casosSection = document.querySelector('#casos');
+        if (casosSection) {
+            observer.observe(casosSection);
+        }
+
+        // Calculadora ROI
+        function calcularROI() {
+            const pacientes = parseInt(document.getElementById('pacientes').value) || 200;
+            const precio = parseInt(document.getElementById('precio').value) || 80;
+            const horas = parseInt(document.getElementById('horas').value) || 4;
+            const noshows = parseInt(document.getElementById('noshows').value) || 25;
+
+            // Cálculos basados en promedios de la industria
+            const nuevosClientes = Math.round(pacientes * 0.6); // 60% más clientes
+            const ingresosAdicionales = nuevosClientes * precio;
+            const tiempoAhorrado = horas * 0.75 * 20; // 75% menos tiempo admin, 20 días laborales
+            const reduccionNoshows = Math.round(75); // Reducción fija del 75%
+            const roiAnual = Math.round(((ingresosAdicionales * 12) / (599 * 12)) * 100);
+
+            document.getElementById('ingresos').textContent = $${ingresosAdicionales.toLocaleString()};
+            document.getElementById('tiempo').textContent = ${tiempoAhorrado} horas;
+            document.getElementById('reduccion').textContent = ${reduccionNoshows}%;
+            document.getElementById('roi').textContent = ${roiAnual}%;
+        }
+
+        // Event listeners para la calculadora
+        ['pacientes', 'precio', 'horas', 'noshows'].forEach(id => {
+            document.getElementById(id).addEventListener('input', calcularROI);
+        });
+
+        // FAQ Toggle
+        function toggleFAQ(num) {
+            const answer = document.getElementById(answer${num});
+            const icon = document.getElementById(icon${num});
+            
+            if (answer.classList.contains('hidden')) {
+                answer.classList.remove('hidden');
+                icon.textContent = '−';
+            } else {
+                answer.classList.add('hidden');
+                icon.textContent = '+';
+            }
+        }
+
+        // Funcionalidad de los botones
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('click', function() {
+                if (this.textContent.includes('Consulta Gratuita') || this.textContent.includes('Comenzar Ahora')) {
+                    alert('¡Excelente! Te contactaremos en las próximas 24 horas para agendar tu consulta gratuita de 30 minutos. Prepara información sobre tu práctica actual para maximizar el valor de la sesión.');
+                } else if (this.textContent.includes('Demo') || this.textContent.includes('Agendar')) {
+                    alert('¡Perfecto! Te enviaremos un enlace para agendar una demo personalizada donde verás exactamente cómo nuestras soluciones se adaptan a tu especialidad médica.');
+                } else if (this.textContent.includes('Información')) {
+                    alert('¡Gracias por tu interés! Te enviaremos un kit completo con casos de estudio, precios y una guía de implementación específica para tu tipo de práctica médica.');
+                } else if (this.textContent.includes('Obtener Estos Resultados')) {
+                    alert('¡Increíble! Basado en tus datos, podrías generar estos resultados. Te contactaremos para mostrarte exactamente cómo lograr estas mejoras en tu práctica.');
+                } else if (this.textContent.includes('Prueba Gratuita')) {
+                    alert('¡Perfecto! Te daremos acceso completo por 14 días sin costo. Incluye onboarding personalizado y migración de datos gratuita.');
+                } else if (this.textContent.includes('Contactar Ventas')) {
+                    alert('¡Excelente elección! Un especialista en soluciones Enterprise te contactará en las próximas 4 horas para diseñar una propuesta personalizada.');
+                }
+            });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96f4369e07e125b8',t:'MTc1NTIxMzk0Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
