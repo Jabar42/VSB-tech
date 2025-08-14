@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HealthAI Marketing - Marketing Digital e IA para el Sector Salud</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HealthAI Marketing - Marketing Digital e IA para el Sector Salud</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
         body { font-family: 'Inter', sans-serif; }
         
@@ -96,580 +96,505 @@
             50% { opacity: 0.7; }
         }
     </style>
-</head>
-<body class="bg-gray-50">
-    <!-- Header -->
-    <header class="header-glass shadow-xl fixed w-full top-0 z-50">
-        <nav class="container mx-auto px-6 py-4">
-            <div class="flex justify-between items-center">
-                <div class="flex items-center space-x-3">
-                    <div class="w-12 h-12 medical-icon rounded-xl flex items-center justify-center floating-element">
-                        <span class="text-white font-bold text-2xl">🏥</span>
+    </head>
+    <body class="bg-gray-50">
+        <!-- Header -->
+        <header class="header-glass shadow-xl fixed w-full top-0 z-50">
+            <nav class="container mx-auto px-6 py-4">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-12 h-12 medical-icon rounded-xl flex items-center justify-center floating-element"><span class="text-white font-bold text-2xl">🏥</span>
+                        </div>
+                        <div><span class="text-2xl font-bold bg-gradient-to-r from-blue-700 to-teal-600 bg-clip-text text-transparent">HealthAI</span>
+                            <p class="text-xs text-gray-600 font-medium">Especialistas en Salud Digital</p>
+                        </div>
                     </div>
-                    <div>
-                        <span class="text-2xl font-bold bg-gradient-to-r from-blue-700 to-teal-600 bg-clip-text text-transparent">HealthAI Marketing</span>
-                        <p class="text-xs text-gray-600 font-medium">Especialistas en Salud Digital</p>
+                    <div class="hidden md:flex space-x-8"><a href="#inicio" class="text-gray-700 hover:text-blue-700 transition-all duration-300 font-medium relative group">
+                        Inicio <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-teal-600 transition-all duration-300 group-hover:w-full"></span> </a><a href="#servicios" class="text-gray-700 hover:text-blue-700 transition-all duration-300 font-medium relative group">
+                        Servicios <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-teal-600 transition-all duration-300 group-hover:w-full"></span> </a><a href="#testimonios" class="text-gray-700 hover:text-blue-700 transition-all duration-300 font-medium relative group">
+                        Testimonios <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-teal-600 transition-all duration-300 group-hover:w-full"></span> </a><a href="#contacto" class="text-gray-700 hover:text-blue-700 transition-all duration-300 font-medium relative group">
+                        Contacto <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-teal-600 transition-all duration-300 group-hover:w-full"></span> </a>
                     </div>
-                </div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#inicio" class="text-gray-700 hover:text-blue-700 transition-all duration-300 font-medium relative group">
-                        Inicio
-                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-teal-600 transition-all duration-300 group-hover:w-full"></span>
-                    </a>
-                    <a href="#servicios" class="text-gray-700 hover:text-blue-700 transition-all duration-300 font-medium relative group">
-                        Servicios
-                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-teal-600 transition-all duration-300 group-hover:w-full"></span>
-                    </a>
-                    <a href="#testimonios" class="text-gray-700 hover:text-blue-700 transition-all duration-300 font-medium relative group">
-                        Testimonios
-                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-teal-600 transition-all duration-300 group-hover:w-full"></span>
-                    </a>
-                    <a href="#contacto" class="text-gray-700 hover:text-blue-700 transition-all duration-300 font-medium relative group">
-                        Contacto
-                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-teal-600 transition-all duration-300 group-hover:w-full"></span>
-                    </a>
-                </div>
-                <button class="btn-primary text-white px-8 py-3 rounded-xl font-semibold shadow-lg">
-                    <span class="flex items-center space-x-2">
-                        <span>📞</span>
-                        <span>Consulta Gratis</span>
-                    </span>
-                </button>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="inicio" class="gradient-bg text-white pt-32 pb-20 relative overflow-hidden">
-        <!-- Elementos decorativos médicos -->
-        <div class="absolute top-20 left-10 text-6xl opacity-10 floating-element">🩺</div>
-        <div class="absolute top-40 right-20 text-4xl opacity-10 pulse-animation">💊</div>
-        <div class="absolute bottom-20 left-20 text-5xl opacity-10 floating-element">🏥</div>
-        <div class="absolute bottom-40 right-10 text-3xl opacity-10 pulse-animation">⚕️</div>
-        
-        <div class="container mx-auto px-6 text-center relative z-10">
-            <div class="max-w-5xl mx-auto">
-                <!-- Badge profesional -->
-                <div class="inline-flex items-center bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 mb-8">
-                    <span class="text-sm font-semibold text-white">🏆 #1 en Marketing Médico Digital</span>
-                </div>
-                
-                <h1 class="text-5xl md:text-7xl font-extrabold mb-8 leading-tight">
-                    Revoluciona tu 
-                    <span class="bg-gradient-to-r from-cyan-300 to-emerald-300 bg-clip-text text-transparent">Práctica Médica</span> 
-                    <br>con <span class="bg-gradient-to-r from-emerald-300 to-cyan-300 bg-clip-text text-transparent">Marketing Digital</span> e <span class="bg-gradient-to-r from-cyan-300 to-blue-300 bg-clip-text text-transparent">IA</span>
-                </h1>
-                
-                <p class="text-xl md:text-2xl mb-12 text-blue-100 max-w-3xl mx-auto leading-relaxed">
-                    Especializados en el sector salud. Atraemos más pacientes, mejoramos tu reputación online y automatizamos tu comunicación médica con tecnología de vanguardia.
-                </p>
-                
-                <!-- Estadísticas rápidas -->
-                <div class="grid grid-cols-3 gap-8 mb-12 max-w-2xl mx-auto">
-                    <div class="text-center">
-                        <div class="text-3xl font-bold text-cyan-300">+200</div>
-                        <div class="text-sm text-blue-200">Médicos Satisfechos</div>
-                    </div>
-                    <div class="text-center">
-                        <div class="text-3xl font-bold text-emerald-300">300%</div>
-                        <div class="text-sm text-blue-200">Aumento Promedio</div>
-                    </div>
-                    <div class="text-center">
-                        <div class="text-3xl font-bold text-cyan-300">24/7</div>
-                        <div class="text-sm text-blue-200">Soporte IA</div>
-                    </div>
-                </div>
-                
-                <div class="flex flex-col sm:flex-row gap-6 justify-center">
-                    <button onclick="scrollToSection('contacto')" class="bg-gradient-to-r from-cyan-400 to-emerald-400 text-gray-900 px-10 py-5 rounded-2xl font-bold text-lg hover:shadow-2xl transition-all duration-300 ai-glow">
-                        <span class="flex items-center justify-center space-x-3">
-                            <span>🚀</span>
-                            <span>Comenzar Ahora</span>
-                        </span>
-                    </button>
-                    <button onclick="scrollToSection('servicios')" class="border-2 border-white/50 backdrop-blur-sm text-white px-10 py-5 rounded-2xl font-bold text-lg hover:bg-white/20 hover:border-white transition-all duration-300">
-                        <span class="flex items-center justify-center space-x-3">
-                            <span>👁️</span>
-                            <span>Ver Servicios</span>
-                        </span>
+                    <button class="btn-primary text-white px-8 py-3 rounded-xl font-semibold shadow-lg"><span class="flex items-center space-x-2"> <span>📞</span> <span>Consulta Gratis</span> </span>
                     </button>
                 </div>
-            </div>
-        </div>
-        
-        <!-- Onda decorativa -->
-        <div class="absolute bottom-0 left-0 right-0">
-            <svg viewBox="0 0 1200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1200,160,1248,128,1296,112L1344,96L1344,200L1296,200C1248,200,1152,200,1056,200C960,200,864,200,768,200C672,200,576,200,480,200C384,200,288,200,192,200C96,200,48,200,24,200L0,200Z" fill="white"/>
-            </svg>
-        </div>
-    </section>
-
-    <!-- Servicios -->
-    <section id="servicios" class="py-24 bg-gradient-to-b from-white to-slate-50">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-20">
-                <div class="inline-flex items-center bg-blue-100 text-blue-800 rounded-full px-4 py-2 mb-6">
-                    <span class="text-sm font-semibold">⚕️ Servicios Médicos Especializados</span>
-                </div>
-                <h2 class="text-5xl font-extrabold bg-gradient-to-r from-blue-700 to-teal-600 bg-clip-text text-transparent mb-6">
-                    Servicios Especializados en Salud
-                </h2>
-                <div class="section-divider mb-6"></div>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                    Soluciones de marketing digital e IA diseñadas específicamente para profesionales de la salud, clínicas y centros médicos
-                </p>
-            </div>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Servicio 1 -->
-                <div class="service-card bg-white p-10 rounded-2xl shadow-xl relative overflow-hidden group">
-                    <div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-100 to-teal-100 rounded-bl-3xl opacity-50"></div>
-                    <div class="w-20 h-20 medical-icon rounded-2xl flex items-center justify-center mb-8 relative z-10">
-                        <span class="text-3xl">🩺</span>
+            </nav>
+        </header>
+        <!-- Hero Section -->
+        <section id="inicio" class="gradient-bg text-white pt-32 pb-20 relative overflow-hidden">
+            <!-- Elementos decorativos médicos -->
+            <div class="absolute top-20 left-10 text-6xl opacity-10 floating-element">🩺</div>
+            <div class="absolute top-40 right-20 text-4xl opacity-10 pulse-animation">💊</div>
+            <div class="absolute bottom-20 left-20 text-5xl opacity-10 floating-element">🏥</div>
+            <div class="absolute bottom-40 right-10 text-3xl opacity-10 pulse-animation">⚕️</div>
+            <div class="container mx-auto px-6 text-center relative z-10">
+                <div class="max-w-5xl mx-auto">
+                    <!-- Badge profesional -->
+                    <div class="inline-flex items-center bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 mb-8"><span class="text-sm font-semibold text-white">🏆 #1 en Marketing Médico Digital</span>
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-800 mb-4 group-hover:text-blue-700 transition-colors">Marketing Médico Digital</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed">
-                        Campañas especializadas para atraer pacientes ideales cumpliendo normativas sanitarias y éticas médicas.
-                    </p>
-                    <ul class="text-gray-600 space-y-3">
-                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span> Google Ads para consultas médicas</li>
-                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span> Campañas educativas en redes</li>
-                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span> Segmentación por patologías</li>
-                    </ul>
-                </div>
-
-                <!-- Servicio 2 -->
-                <div class="service-card bg-white p-10 rounded-2xl shadow-xl relative overflow-hidden group">
-                    <div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-green-100 to-blue-100 rounded-bl-3xl opacity-50"></div>
-                    <div class="w-20 h-20 medical-icon rounded-2xl flex items-center justify-center mb-8 relative z-10">
-                        <span class="text-3xl">🔍</span>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-800 mb-4 group-hover:text-blue-700 transition-colors">SEO Médico Especializado</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed">
-                        Posicionamiento web para términos médicos y de salud, aparecer cuando los pacientes te buscan.
-                    </p>
-                    <ul class="text-gray-600 space-y-3">
-                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span> Keywords médicas locales</li>
-                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span> Contenido médico optimizado</li>
-                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span> Google My Business médico</li>
-                    </ul>
-                </div>
-
-                <!-- Servicio 3 -->
-                <div class="service-card bg-white p-10 rounded-2xl shadow-xl relative overflow-hidden group">
-                    <div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-purple-100 to-blue-100 rounded-bl-3xl opacity-50"></div>
-                    <div class="w-20 h-20 medical-icon rounded-2xl flex items-center justify-center mb-8 relative z-10">
-                        <span class="text-3xl">🤖</span>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-800 mb-4 group-hover:text-blue-700 transition-colors">Asistentes Médicos IA</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed">
-                        Chatbots especializados para agendar citas, responder consultas básicas y triaje de pacientes 24/7.
-                    </p>
-                    <ul class="text-gray-600 space-y-3">
-                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span> Agendamiento automático</li>
-                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span> Triaje inteligente</li>
-                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span> Recordatorios de citas</li>
-                    </ul>
-                </div>
-
-                <!-- Servicio 4 -->
-                <div class="service-card bg-white p-10 rounded-2xl shadow-xl relative overflow-hidden group">
-                    <div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-pink-100 to-red-100 rounded-bl-3xl opacity-50"></div>
-                    <div class="w-20 h-20 medical-icon rounded-2xl flex items-center justify-center mb-8 relative z-10">
-                        <span class="text-3xl">📱</span>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-800 mb-4 group-hover:text-blue-700 transition-colors">Redes Sociales Médicas</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed">
-                        Contenido educativo y de valor para pacientes, construyendo autoridad médica en redes sociales.
-                    </p>
-                    <ul class="text-gray-600 space-y-3">
-                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span> Contenido educativo médico</li>
-                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span> Casos clínicos anonimizados</li>
-                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span> Campañas de prevención</li>
-                    </ul>
-                </div>
-
-                <!-- Servicio 5 -->
-                <div class="service-card bg-white p-10 rounded-2xl shadow-xl relative overflow-hidden group">
-                    <div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-yellow-100 to-orange-100 rounded-bl-3xl opacity-50"></div>
-                    <div class="w-20 h-20 medical-icon rounded-2xl flex items-center justify-center mb-8 relative z-10">
-                        <span class="text-3xl">⭐</span>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-800 mb-4 group-hover:text-blue-700 transition-colors">Reputación Online Médica</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed">
-                        Gestión de reseñas, testimonios de pacientes y construcción de autoridad médica digital.
-                    </p>
-                    <ul class="text-gray-600 space-y-3">
-                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span> Gestión de reseñas Google</li>
-                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span> Testimonios de pacientes</li>
-                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span> Monitoreo de menciones</li>
-                    </ul>
-                </div>
-
-                <!-- Servicio 6 -->
-                <div class="service-card bg-white p-10 rounded-2xl shadow-xl relative overflow-hidden group">
-                    <div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-indigo-100 to-purple-100 rounded-bl-3xl opacity-50"></div>
-                    <div class="w-20 h-20 medical-icon rounded-2xl flex items-center justify-center mb-8 relative z-10">
-                        <span class="text-3xl">🏥</span>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-800 mb-4 group-hover:text-blue-700 transition-colors">Webs Médicas Profesionales</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed">
-                        Sitios web médicos optimizados para conversión de pacientes con diseño profesional y funcional.
-                    </p>
-                    <ul class="text-gray-600 space-y-3">
-                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span> Diseño médico profesional</li>
-                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span> Sistema de citas online</li>
-                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span> Portal del paciente</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonios -->
-    <section id="testimonios" class="py-24 bg-gradient-to-br from-slate-50 to-blue-50 relative">
-        <!-- Elementos decorativos -->
-        <div class="absolute top-10 left-10 text-4xl opacity-5">💬</div>
-        <div class="absolute bottom-10 right-10 text-6xl opacity-5">⚕️</div>
-        
-        <div class="container mx-auto px-6 relative z-10">
-            <div class="text-center mb-20">
-                <div class="inline-flex items-center bg-green-100 text-green-800 rounded-full px-4 py-2 mb-6">
-                    <span class="text-sm font-semibold">💬 Testimonios Médicos</span>
-                </div>
-                <h2 class="text-5xl font-extrabold bg-gradient-to-r from-blue-700 to-teal-600 bg-clip-text text-transparent mb-6">
-                    Lo que Dicen Nuestros Clientes
-                </h2>
-                <div class="section-divider mb-6"></div>
-                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-                    Resultados reales de profesionales médicos que confiaron en nosotros
-                </p>
-            </div>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="testimonial-card p-10 rounded-2xl shadow-xl relative overflow-hidden">
-                    <div class="absolute top-4 right-4 text-4xl opacity-20">💙</div>
-                    <div class="flex items-center mb-6">
-                        <div class="w-16 h-16 medical-icon rounded-full flex items-center justify-center text-white font-bold text-xl">
-                            MG
+                    <h1 class="text-5xl md:text-7xl font-extrabold mb-8 leading-tight">
+                    Revoluciona tu  <span class="bg-gradient-to-r from-cyan-300 to-emerald-300 bg-clip-text text-transparent">Práctica Médica</span>  <br>con <span class="bg-gradient-to-r from-emerald-300 to-cyan-300 bg-clip-text text-transparent">Marketing Digital</span> e <span class="bg-gradient-to-r from-cyan-300 to-blue-300 bg-clip-text text-transparent">IA</span> </h1>
+                    <p class="text-xl md:text-2xl mb-12 text-blue-100 max-w-3xl mx-auto leading-relaxed">
+                    Especializados en el sector salud. Atraemos más pacientes, mejoramos tu reputación online y automatizamos tu comunicación médica con tecnología de vanguardia. </p>
+                    <!-- Estadísticas rápidas -->
+                    <div class="grid grid-cols-3 gap-8 mb-12 max-w-2xl mx-auto">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-cyan-300">+200</div>
+                            <div class="text-sm text-blue-200">Médicos Satisfechos</div>
                         </div>
-                        <div class="ml-4">
-                            <h4 class="font-bold text-gray-800 text-lg">Dr. María González</h4>
-                            <p class="text-blue-600 font-medium">Cardióloga, Clínica CardioVida</p>
-                            <p class="text-sm text-gray-500">Madrid, España</p>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-emerald-300">300%</div>
+                            <div class="text-sm text-blue-200">Aumento Promedio</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-cyan-300">24/7</div>
+                            <div class="text-sm text-blue-200">Soporte IA</div>
                         </div>
                     </div>
-                    <div class="mb-4">
-                        <svg class="w-8 h-8 text-blue-500 mb-2" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
-                        </svg>
-                    </div>
-                    <p class="text-gray-700 italic text-lg leading-relaxed mb-6">
-                        "Triplicamos nuestros pacientes nuevos en 4 meses. Su chatbot médico agenda citas automáticamente 24/7. Increíble ROI."
-                    </p>
-                    <div class="flex items-center justify-between">
-                        <div class="flex text-yellow-400 text-xl">
-                            ⭐⭐⭐⭐⭐
-                        </div>
-                        <div class="text-sm text-gray-500 font-medium">+300% pacientes</div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card p-10 rounded-2xl shadow-xl relative overflow-hidden">
-                    <div class="absolute top-4 right-4 text-4xl opacity-20">💚</div>
-                    <div class="flex items-center mb-6">
-                        <div class="w-16 h-16 medical-icon rounded-full flex items-center justify-center text-white font-bold text-xl">
-                            CR
-                        </div>
-                        <div class="ml-4">
-                            <h4 class="font-bold text-gray-800 text-lg">Dr. Carlos Ruiz</h4>
-                            <p class="text-blue-600 font-medium">Dermatólogo, Centro DermaSalud</p>
-                            <p class="text-sm text-gray-500">Barcelona, España</p>
-                        </div>
-                    </div>
-                    <div class="mb-4">
-                        <svg class="w-8 h-8 text-blue-500 mb-2" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
-                        </svg>
-                    </div>
-                    <p class="text-gray-700 italic text-lg leading-relaxed mb-6">
-                        "Nuestras consultas aumentaron 200% con su SEO médico. Ahora aparecemos primero en Google para dermatología."
-                    </p>
-                    <div class="flex items-center justify-between">
-                        <div class="flex text-yellow-400 text-xl">
-                            ⭐⭐⭐⭐⭐
-                        </div>
-                        <div class="text-sm text-gray-500 font-medium">+200% consultas</div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card p-10 rounded-2xl shadow-xl relative overflow-hidden">
-                    <div class="absolute top-4 right-4 text-4xl opacity-20">💜</div>
-                    <div class="flex items-center mb-6">
-                        <div class="w-16 h-16 medical-icon rounded-full flex items-center justify-center text-white font-bold text-xl">
-                            AL
-                        </div>
-                        <div class="ml-4">
-                            <h4 class="font-bold text-gray-800 text-lg">Dra. Ana López</h4>
-                            <p class="text-blue-600 font-medium">Ginecóloga, Clínica Mujer Integral</p>
-                            <p class="text-sm text-gray-500">Valencia, España</p>
-                        </div>
-                    </div>
-                    <div class="mb-4">
-                        <svg class="w-8 h-8 text-blue-500 mb-2" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
-                        </svg>
-                    </div>
-                    <p class="text-gray-700 italic text-lg leading-relaxed mb-6">
-                        "Su gestión de redes sociales médicas nos posicionó como referentes. Pacientes de toda la ciudad nos buscan."
-                    </p>
-                    <div class="flex items-center justify-between">
-                        <div class="flex text-yellow-400 text-xl">
-                            ⭐⭐⭐⭐⭐
-                        </div>
-                        <div class="text-sm text-gray-500 font-medium">Líderes regionales</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="py-24 gradient-bg text-white relative overflow-hidden">
-        <!-- Elementos decorativos médicos -->
-        <div class="absolute top-10 left-10 text-6xl opacity-10 floating-element">🏥</div>
-        <div class="absolute bottom-10 right-10 text-4xl opacity-10 pulse-animation">💊</div>
-        <div class="absolute top-20 right-20 text-5xl opacity-10 floating-element">🩺</div>
-        
-        <div class="container mx-auto px-6 text-center relative z-10">
-            <div class="max-w-4xl mx-auto">
-                <!-- Badge de urgencia -->
-                <div class="inline-flex items-center bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 mb-8">
-                    <span class="text-sm font-semibold text-white">⏰ Oferta Limitada - Solo este mes</span>
-                </div>
-                
-                <h2 class="text-5xl md:text-6xl font-extrabold mb-8 leading-tight">
-                    ¿Listo para Hacer Crecer tu 
-                    <span class="bg-gradient-to-r from-cyan-300 to-emerald-300 bg-clip-text text-transparent">Práctica Médica?</span>
-                </h2>
-                
-                <p class="text-xl md:text-2xl mb-12 text-blue-100 max-w-3xl mx-auto leading-relaxed">
-                    Únete a más de 200 profesionales de la salud que ya están atrayendo más pacientes con nuestras soluciones especializadas.
-                </p>
-                
-                <!-- Beneficios rápidos -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-3xl mx-auto">
-                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-                        <div class="text-3xl mb-2">🚀</div>
-                        <div class="font-semibold text-cyan-300">Resultados en 30 días</div>
-                        <div class="text-sm text-blue-200">Primeros pacientes garantizados</div>
-                    </div>
-                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-                        <div class="text-3xl mb-2">💰</div>
-                        <div class="font-semibold text-emerald-300">ROI del 300%</div>
-                        <div class="text-sm text-blue-200">Inversión recuperada rápido</div>
-                    </div>
-                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-                        <div class="text-3xl mb-2">🎯</div>
-                        <div class="font-semibold text-cyan-300">100% Especializado</div>
-                        <div class="text-sm text-blue-200">Solo sector salud</div>
-                    </div>
-                </div>
-                
-                <div class="flex flex-col sm:flex-row gap-6 justify-center">
-                    <button onclick="scrollToSection('contacto')" class="bg-gradient-to-r from-cyan-400 to-emerald-400 text-gray-900 px-12 py-6 rounded-2xl font-bold text-xl hover:shadow-2xl transition-all duration-300 ai-glow">
-                        <span class="flex items-center justify-center space-x-3">
-                            <span>📞</span>
-                            <span>Consulta Gratuita</span>
-                        </span>
-                    </button>
-                    <button onclick="openWhatsApp()" class="border-2 border-white/50 backdrop-blur-sm text-white px-12 py-6 rounded-2xl font-bold text-xl hover:bg-white/20 hover:border-white transition-all duration-300">
-                        <span class="flex items-center justify-center space-x-3">
-                            <span>💬</span>
-                            <span>WhatsApp Directo</span>
-                        </span>
-                    </button>
-                </div>
-                
-                <!-- Garantía -->
-                <div class="mt-12 text-center">
-                    <p class="text-blue-200 text-lg">
-                        🛡️ <strong>Garantía de 30 días</strong> - Si no ves resultados, te devolvemos tu dinero
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contacto -->
-    <section id="contacto" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-800 mb-4">Contacta con Nosotros</h2>
-                <p class="text-xl text-gray-600">Comienza tu transformación digital hoy mismo</p>
-            </div>
-            
-            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
-                <!-- Formulario -->
-                <div>
-                    <form name="contact" netlify netlify-honeypot="bot-field" method="POST" class="space-y-6">
-                        <input type="hidden" name="form-name" value="contact">
-                        <p class="hidden"><label>No completar: <input name="bot-field"></label></p>
-                        <div>
-                            <label class="block text-gray-700 font-semibold mb-2">Nombre Completo</label>
-                            <input type="text" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent">
-                        </div>
-                        <div>
-                            <label class="block text-gray-700 font-semibold mb-2">Email</label>
-                            <input type="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent">
-                        </div>
-                        <div>
-                            <label class="block text-gray-700 font-semibold mb-2">Teléfono</label>
-                            <input type="tel" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent">
-                        </div>
-                        <div>
-                            <label class="block text-gray-700 font-semibold mb-2">Servicio de Interés</label>
-                            <select name="service" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent">
-                                <option>Marketing Médico Digital</option>
-                                <option>SEO Médico Especializado</option>
-                                <option>Asistentes Médicos IA</option>
-                                <option>Redes Sociales Médicas</option>
-                                <option>Reputación Online Médica</option>
-                                <option>Webs Médicas Profesionales</option>
-                                <option>Consultoría Médica Integral</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label class="block text-gray-700 font-semibold mb-2">Mensaje</label>
-                            <textarea name="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Cuéntanos sobre tu proyecto..."></textarea>
-                        </div>
-                        <button type="submit" class="w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white py-4 rounded-lg font-semibold text-lg hover:shadow-lg transition">
-                            Enviar Consulta
+                    <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                        <button onclick="scrollToSection('contacto')" class="bg-gradient-to-r from-cyan-400 to-emerald-400 text-gray-900 px-10 py-5 rounded-2xl font-bold text-lg hover:shadow-2xl transition-all duration-300 ai-glow"><span class="flex items-center justify-center space-x-3"> <span>🚀</span> <span>Comenzar Ahora</span> </span>
                         </button>
-                    </form>
-                </div>
-                
-                <!-- Información de contacto -->
-                <div class="space-y-8">
-                    <div>
-                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Información de Contacto</h3>
-                        <div class="space-y-4">
-                            <div class="flex items-center">
-                                <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
-                                    <span class="text-purple-600 text-xl">📧</span>
-                                </div>
-                                <div>
-                                    <p class="font-semibold text-gray-800">Email</p>
-                                    <p class="text-gray-600">info@healthai-marketing.com</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center">
-                                <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
-                                    <span class="text-purple-600 text-xl">📱</span>
-                                </div>
-                                <div>
-                                    <p class="font-semibold text-gray-800">WhatsApp</p>
-                                    <p class="text-gray-600">+34 600 123 456</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center">
-                                <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
-                                    <span class="text-purple-600 text-xl">🕒</span>
-                                </div>
-                                <div>
-                                    <p class="font-semibold text-gray-800">Horario</p>
-                                    <p class="text-gray-600">Lun - Vie: 9:00 - 18:00</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="bg-gradient-to-r from-purple-600 to-blue-600 p-6 rounded-xl text-white">
-                        <h4 class="text-xl font-bold mb-3">🎁 Oferta Especial</h4>
-                        <p class="mb-4">Consulta gratuita de 30 minutos + Auditoría digital sin costo</p>
-                        <button onclick="openWhatsApp()" class="bg-white text-purple-600 px-6 py-2 rounded-lg font-semibold hover:bg-gray-100 transition">
-                            Reclamar Oferta
+                        <button onclick="scrollToSection('servicios')" class="border-2 border-white/50 backdrop-blur-sm text-white px-10 py-5 rounded-2xl font-bold text-lg hover:bg-white/20 hover:border-white transition-all duration-300"><span class="flex items-center justify-center space-x-3"> <span>👁️</span> <span>Ver Servicios</span> </span>
                         </button>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gradient-to-br from-gray-900 to-slate-800 text-white py-16">
-        <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-4 gap-8">
-                <div>
-                    <div class="flex items-center space-x-3 mb-6">
-                        <div class="w-12 h-12 medical-icon rounded-xl flex items-center justify-center">
-                            <span class="text-white font-bold text-2xl">🏥</span>
+            <!-- Onda decorativa -->
+            <div class="absolute bottom-0 left-0 right-0">
+                <svg viewBox="0 0 1200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1200,160,1248,128,1296,112L1344,96L1344,200L1296,200C1248,200,1152,200,1056,200C960,200,864,200,768,200C672,200,576,200,480,200C384,200,288,200,192,200C96,200,48,200,24,200L0,200Z" fill="white"/>
+                </svg>
+            </div>
+        </section>
+        <!-- Servicios -->
+        <section id="servicios" class="py-24 bg-gradient-to-b from-white to-slate-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-20">
+                    <div class="inline-flex items-center bg-blue-100 text-blue-800 rounded-full px-4 py-2 mb-6"><span class="text-sm font-semibold">⚕️ Servicios Médicos Especializados</span>
+                    </div>
+                    <h2 class="text-5xl font-extrabold bg-gradient-to-r from-blue-700 to-teal-600 bg-clip-text text-transparent mb-6">
+                    Servicios Especializados en Salud </h2>
+                    <div class="section-divider mb-6"></div>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    Soluciones de marketing digital e IA diseñadas específicamente para profesionales de la salud, clínicas y centros médicos </p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Servicio 1 -->
+                    <div class="service-card bg-white p-10 rounded-2xl shadow-xl relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-100 to-teal-100 rounded-bl-3xl opacity-50"></div>
+                        <div class="w-20 h-20 medical-icon rounded-2xl flex items-center justify-center mb-8 relative z-10"><span class="text-3xl">🩺</span>
                         </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4 group-hover:text-blue-700 transition-colors">Marketing Médico Digital</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                        Campañas especializadas para atraer pacientes ideales cumpliendo normativas sanitarias y éticas médicas. </p>
+                        <ul class="text-gray-600 space-y-3">
+                            <li class="flex items-center">
+                                <span class="text-green-500 mr-3">✓</span> Google Ads para consultas médicas
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-green-500 mr-3">✓</span> Campañas educativas en redes
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-green-500 mr-3">✓</span> Segmentación por patologías
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Servicio 2 -->
+                    <div class="service-card bg-white p-10 rounded-2xl shadow-xl relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-green-100 to-blue-100 rounded-bl-3xl opacity-50"></div>
+                        <div class="w-20 h-20 medical-icon rounded-2xl flex items-center justify-center mb-8 relative z-10"><span class="text-3xl">🔍</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4 group-hover:text-blue-700 transition-colors">SEO Médico Especializado</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                        Posicionamiento web para términos médicos y de salud, aparecer cuando los pacientes te buscan. </p>
+                        <ul class="text-gray-600 space-y-3">
+                            <li class="flex items-center">
+                                <span class="text-green-500 mr-3">✓</span> Keywords médicas locales
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-green-500 mr-3">✓</span> Contenido médico optimizado
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-green-500 mr-3">✓</span> Google My Business médico
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Servicio 3 -->
+                    <div class="service-card bg-white p-10 rounded-2xl shadow-xl relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-purple-100 to-blue-100 rounded-bl-3xl opacity-50"></div>
+                        <div class="w-20 h-20 medical-icon rounded-2xl flex items-center justify-center mb-8 relative z-10"><span class="text-3xl">🤖</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4 group-hover:text-blue-700 transition-colors">Asistentes Médicos IA</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                        Chatbots especializados para agendar citas, responder consultas básicas y triaje de pacientes 24/7. </p>
+                        <ul class="text-gray-600 space-y-3">
+                            <li class="flex items-center">
+                                <span class="text-green-500 mr-3">✓</span> Agendamiento automático
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-green-500 mr-3">✓</span> Triaje inteligente
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-green-500 mr-3">✓</span> Recordatorios de citas
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Servicio 4 -->
+                    <div class="service-card bg-white p-10 rounded-2xl shadow-xl relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-pink-100 to-red-100 rounded-bl-3xl opacity-50"></div>
+                        <div class="w-20 h-20 medical-icon rounded-2xl flex items-center justify-center mb-8 relative z-10"><span class="text-3xl">📱</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4 group-hover:text-blue-700 transition-colors">Redes Sociales Médicas</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                        Contenido educativo y de valor para pacientes, construyendo autoridad médica en redes sociales. </p>
+                        <ul class="text-gray-600 space-y-3">
+                            <li class="flex items-center">
+                                <span class="text-green-500 mr-3">✓</span> Contenido educativo médico
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-green-500 mr-3">✓</span> Casos clínicos anonimizados
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-green-500 mr-3">✓</span> Campañas de prevención
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Servicio 5 -->
+                    <div class="service-card bg-white p-10 rounded-2xl shadow-xl relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-yellow-100 to-orange-100 rounded-bl-3xl opacity-50"></div>
+                        <div class="w-20 h-20 medical-icon rounded-2xl flex items-center justify-center mb-8 relative z-10"><span class="text-3xl">⭐</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4 group-hover:text-blue-700 transition-colors">Reputación Online Médica</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                        Gestión de reseñas, testimonios de pacientes y construcción de autoridad médica digital. </p>
+                        <ul class="text-gray-600 space-y-3">
+                            <li class="flex items-center">
+                                <span class="text-green-500 mr-3">✓</span> Gestión de reseñas Google
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-green-500 mr-3">✓</span> Testimonios de pacientes
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-green-500 mr-3">✓</span> Monitoreo de menciones
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Servicio 6 -->
+                    <div class="service-card bg-white p-10 rounded-2xl shadow-xl relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-indigo-100 to-purple-100 rounded-bl-3xl opacity-50"></div>
+                        <div class="w-20 h-20 medical-icon rounded-2xl flex items-center justify-center mb-8 relative z-10"><span class="text-3xl">🏥</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4 group-hover:text-blue-700 transition-colors">Webs Médicas Profesionales</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                        Sitios web médicos optimizados para conversión de pacientes con diseño profesional y funcional. </p>
+                        <ul class="text-gray-600 space-y-3">
+                            <li class="flex items-center">
+                                <span class="text-green-500 mr-3">✓</span> Diseño médico profesional
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-green-500 mr-3">✓</span> Sistema de citas online
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-green-500 mr-3">✓</span> Portal del paciente
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonios -->
+        <section id="testimonios" class="py-24 bg-gradient-to-br from-slate-50 to-blue-50 relative">
+            <!-- Elementos decorativos -->
+            <div class="absolute top-10 left-10 text-4xl opacity-5">💬</div>
+            <div class="absolute bottom-10 right-10 text-6xl opacity-5">⚕️</div>
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="text-center mb-20">
+                    <div class="inline-flex items-center bg-green-100 text-green-800 rounded-full px-4 py-2 mb-6"><span class="text-sm font-semibold">💬 Testimonios Médicos</span>
+                    </div>
+                    <h2 class="text-5xl font-extrabold bg-gradient-to-r from-blue-700 to-teal-600 bg-clip-text text-transparent mb-6">
+                    Lo que Dicen Nuestros Clientes </h2>
+                    <div class="section-divider mb-6"></div>
+                    <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Resultados reales de profesionales médicos que confiaron en nosotros </p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="testimonial-card p-10 rounded-2xl shadow-xl relative overflow-hidden">
+                        <div class="absolute top-4 right-4 text-4xl opacity-20">💙</div>
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 medical-icon rounded-full flex items-center justify-center text-white font-bold text-xl">
+                                MG
+</div>
+                            <div class="ml-4">
+                                <h4 class="font-bold text-gray-800 text-lg">Dr. María González</h4>
+                                <p class="text-blue-600 font-medium">Cardióloga, Clínica CardioVida</p>
+                                <p class="text-sm text-gray-500">Madrid, España</p>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <svg class="w-8 h-8 text-blue-500 mb-2" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                            </svg>
+                        </div>
+                        <p class="text-gray-700 italic text-lg leading-relaxed mb-6">
+                        "Triplicamos nuestros pacientes nuevos en 4 meses. Su chatbot médico agenda citas automáticamente 24/7. Increíble ROI." </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex text-yellow-400 text-xl">
+                                ⭐⭐⭐⭐⭐
+</div>
+                            <div class="text-sm text-gray-500 font-medium">+300% pacientes</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card p-10 rounded-2xl shadow-xl relative overflow-hidden">
+                        <div class="absolute top-4 right-4 text-4xl opacity-20">💚</div>
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 medical-icon rounded-full flex items-center justify-center text-white font-bold text-xl">
+                                CR
+</div>
+                            <div class="ml-4">
+                                <h4 class="font-bold text-gray-800 text-lg">Dr. Carlos Ruiz</h4>
+                                <p class="text-blue-600 font-medium">Dermatólogo, Centro DermaSalud</p>
+                                <p class="text-sm text-gray-500">Barcelona, España</p>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <svg class="w-8 h-8 text-blue-500 mb-2" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                            </svg>
+                        </div>
+                        <p class="text-gray-700 italic text-lg leading-relaxed mb-6">
+                        "Nuestras consultas aumentaron 200% con su SEO médico. Ahora aparecemos primero en Google para dermatología." </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex text-yellow-400 text-xl">
+                                ⭐⭐⭐⭐⭐
+</div>
+                            <div class="text-sm text-gray-500 font-medium">+200% consultas</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card p-10 rounded-2xl shadow-xl relative overflow-hidden">
+                        <div class="absolute top-4 right-4 text-4xl opacity-20">💜</div>
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 medical-icon rounded-full flex items-center justify-center text-white font-bold text-xl">
+                                AL
+</div>
+                            <div class="ml-4">
+                                <h4 class="font-bold text-gray-800 text-lg">Dra. Ana López</h4>
+                                <p class="text-blue-600 font-medium">Ginecóloga, Clínica Mujer Integral</p>
+                                <p class="text-sm text-gray-500">Valencia, España</p>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <svg class="w-8 h-8 text-blue-500 mb-2" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                            </svg>
+                        </div>
+                        <p class="text-gray-700 italic text-lg leading-relaxed mb-6">
+                        "Su gestión de redes sociales médicas nos posicionó como referentes. Pacientes de toda la ciudad nos buscan." </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex text-yellow-400 text-xl">
+                                ⭐⭐⭐⭐⭐
+</div>
+                            <div class="text-sm text-gray-500 font-medium">Líderes regionales</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA Section -->
+        <section class="py-24 gradient-bg text-white relative overflow-hidden">
+            <!-- Elementos decorativos médicos -->
+            <div class="absolute top-10 left-10 text-6xl opacity-10 floating-element">🏥</div>
+            <div class="absolute bottom-10 right-10 text-4xl opacity-10 pulse-animation">💊</div>
+            <div class="absolute top-20 right-20 text-5xl opacity-10 floating-element">🩺</div>
+            <div class="container mx-auto px-6 text-center relative z-10">
+                <div class="max-w-4xl mx-auto">
+                    <!-- Badge de urgencia -->
+                    <div class="inline-flex items-center bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 mb-8"><span class="text-sm font-semibold text-white">⏰ Oferta Limitada - Solo este mes</span>
+                    </div>
+                    <h2 class="text-5xl md:text-6xl font-extrabold mb-8 leading-tight">
+                    ¿Listo para Hacer Crecer tu  <span class="bg-gradient-to-r from-cyan-300 to-emerald-300 bg-clip-text text-transparent">Práctica Médica?</span> </h2>
+                    <p class="text-xl md:text-2xl mb-12 text-blue-100 max-w-3xl mx-auto leading-relaxed">
+                    Únete a más de 200 profesionales de la salud que ya están atrayendo más pacientes con nuestras soluciones especializadas. </p>
+                    <!-- Beneficios rápidos -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-3xl mx-auto">
+                        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                            <div class="text-3xl mb-2">🚀</div>
+                            <div class="font-semibold text-cyan-300">Resultados en 30 días</div>
+                            <div class="text-sm text-blue-200">Primeros pacientes garantizados</div>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                            <div class="text-3xl mb-2">💰</div>
+                            <div class="font-semibold text-emerald-300">ROI del 300%</div>
+                            <div class="text-sm text-blue-200">Inversión recuperada rápido</div>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                            <div class="text-3xl mb-2">🎯</div>
+                            <div class="font-semibold text-cyan-300">100% Especializado</div>
+                            <div class="text-sm text-blue-200">Solo sector salud</div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                        <button onclick="scrollToSection('contacto')" class="bg-gradient-to-r from-cyan-400 to-emerald-400 text-gray-900 px-12 py-6 rounded-2xl font-bold text-xl hover:shadow-2xl transition-all duration-300 ai-glow"><span class="flex items-center justify-center space-x-3"> <span>📞</span> <span>Consulta Gratuita</span> </span>
+                        </button>
+                        <button onclick="openWhatsApp()" class="border-2 border-white/50 backdrop-blur-sm text-white px-12 py-6 rounded-2xl font-bold text-xl hover:bg-white/20 hover:border-white transition-all duration-300"><span class="flex items-center justify-center space-x-3"> <span>💬</span> <span>WhatsApp Directo</span> </span>
+                        </button>
+                    </div>
+                    <!-- Garantía -->
+                    <div class="mt-12 text-center">
+                        <p class="text-blue-200 text-lg">
+                        🛡️ <strong>Garantía de 30 días</strong> - Si no ves resultados, te devolvemos tu dinero </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contacto -->
+        <section id="contacto" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-4">Contacta con Nosotros</h2>
+                    <p class="text-xl text-gray-600">Comienza tu transformación digital hoy mismo</p>
+                </div>
+                <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
+                    <!-- Formulario -->
+                    <div>
+                        <form name="contact" netlify netlify-honeypot="bot-field" method="POST" class="space-y-6">
+                            <input type="hidden" name="form-name" value="contact">
+                            <p class="hidden"><label>No completar: 
+                                    <input name="bot-field">
+                                </label></p>
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">Nombre Completo</label>
+                                <input type="text" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">Email</label>
+                                <input type="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">Teléfono</label>
+                                <input type="tel" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">Servicio de Interés</label>
+                                <select name="service" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+                                    <option>Marketing Médico Digital</option>
+                                    <option>SEO Médico Especializado</option>
+                                    <option>Asistentes Médicos IA</option>
+                                    <option>Redes Sociales Médicas</option>
+                                    <option>Reputación Online Médica</option>
+                                    <option>Webs Médicas Profesionales</option>
+                                    <option>Consultoría Médica Integral</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">Mensaje</label>
+                                <textarea name="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Cuéntanos sobre tu proyecto..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white py-4 rounded-lg font-semibold text-lg hover:shadow-lg transition">
+                                Enviar Consulta
+</button>
+                        </form>
+                    </div>
+                    <!-- Información de contacto -->
+                    <div class="space-y-8">
                         <div>
-                            <span class="text-2xl font-bold bg-gradient-to-r from-cyan-300 to-emerald-300 bg-clip-text text-transparent">HealthAI Marketing</span>
-                            <p class="text-xs text-gray-400">Especialistas en Salud Digital</p>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-6">Información de Contacto</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-center">
+                                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4"><span class="text-purple-600 text-xl">📧</span>
+                                    </div>
+                                    <div>
+                                        <p class="font-semibold text-gray-800">Email</p>
+                                        <p class="text-gray-600">info@healthai-marketing.com</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4"><span class="text-purple-600 text-xl">📱</span>
+                                    </div>
+                                    <div>
+                                        <p class="font-semibold text-gray-800">WhatsApp</p>
+                                        <p class="text-gray-600">+34 600 123 456</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4"><span class="text-purple-600 text-xl">🕒</span>
+                                    </div>
+                                    <div>
+                                        <p class="font-semibold text-gray-800">Horario</p>
+                                        <p class="text-gray-600">Lun - Vie: 9:00 - 18:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-gradient-to-r from-purple-600 to-blue-600 p-6 rounded-xl text-white">
+                            <h4 class="text-xl font-bold mb-3">🎁 Oferta Especial</h4>
+                            <p class="mb-4">Consulta gratuita de 30 minutos + Auditoría digital sin costo</p>
+                            <button onclick="openWhatsApp()" class="bg-white text-purple-600 px-6 py-2 rounded-lg font-semibold hover:bg-gray-100 transition">
+                                Reclamar Oferta
+</button>
                         </div>
                     </div>
-                    <p class="text-gray-400 leading-relaxed mb-4">
-                        Transformamos prácticas médicas con marketing digital e inteligencia artificial especializada en el sector salud.
-                    </p>
-                    <div class="flex items-center space-x-2 text-sm text-gray-400">
-                        <span>🏆</span>
-                        <span>Certificados en Marketing Médico</span>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="bg-gradient-to-br from-gray-900 to-slate-800 text-white py-16">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-4 gap-8">
+                    <div>
+                        <div class="flex items-center space-x-3 mb-6">
+                            <div class="w-12 h-12 medical-icon rounded-xl flex items-center justify-center"><span class="text-white font-bold text-2xl">🏥</span>
+                            </div>
+                            <div><span class="text-2xl font-bold bg-gradient-to-r from-cyan-300 to-emerald-300 bg-clip-text text-transparent">HealthAI Marketing</span>
+                                <p class="text-xs text-gray-400">Especialistas en Salud Digital</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-400 leading-relaxed mb-4">
+                        Transformamos prácticas médicas con marketing digital e inteligencia artificial especializada en el sector salud. </p>
+                        <div class="flex items-center space-x-2 text-sm text-gray-400"><span>🏆</span><span>Certificados en Marketing Médico</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-6 text-cyan-300">Servicios Médicos</h4>
+                        <ul class="space-y-3 text-gray-400">
+                            <li class="hover:text-white transition-colors cursor-pointer">Marketing Médico Digital</li>
+                            <li class="hover:text-white transition-colors cursor-pointer">SEO Médico</li>
+                            <li class="hover:text-white transition-colors cursor-pointer">Asistentes IA</li>
+                            <li class="hover:text-white transition-colors cursor-pointer">Redes Sociales Médicas</li>
+                            <li class="hover:text-white transition-colors cursor-pointer">Reputación Online</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-6 text-emerald-300">Especialidades</h4>
+                        <ul class="space-y-3 text-gray-400">
+                            <li class="hover:text-white transition-colors cursor-pointer">Clínicas Privadas</li>
+                            <li class="hover:text-white transition-colors cursor-pointer">Consultas Médicas</li>
+                            <li class="hover:text-white transition-colors cursor-pointer">Centros Especializados</li>
+                            <li class="hover:text-white transition-colors cursor-pointer">Hospitales</li>
+                            <li class="hover:text-white transition-colors cursor-pointer">Telemedicina</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-6 text-blue-300">Síguenos</h4>
+                        <div class="flex space-x-4 mb-6"><a href="#" class="w-12 h-12 bg-gray-800 rounded-xl flex items-center justify-center hover:bg-blue-600 transition-all duration-300 hover:scale-110">📘</a><a href="#" class="w-12 h-12 bg-gray-800 rounded-xl flex items-center justify-center hover:bg-pink-600 transition-all duration-300 hover:scale-110">📷</a><a href="#" class="w-12 h-12 bg-gray-800 rounded-xl flex items-center justify-center hover:bg-blue-400 transition-all duration-300 hover:scale-110">🐦</a><a href="#" class="w-12 h-12 bg-gray-800 rounded-xl flex items-center justify-center hover:bg-blue-700 transition-all duration-300 hover:scale-110">💼</a>
+                        </div>
+                        <div class="bg-gradient-to-r from-blue-600 to-teal-600 p-4 rounded-xl">
+                            <h5 class="font-semibold mb-2">📞 Contacto Directo</h5>
+                            <p class="text-sm text-blue-100 mb-2">+34 600 123 456</p>
+                            <p class="text-xs text-blue-200">Lun-Vie: 9:00-18:00</p>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-6 text-cyan-300">Servicios Médicos</h4>
-                    <ul class="space-y-3 text-gray-400">
-                        <li class="hover:text-white transition-colors cursor-pointer">Marketing Médico Digital</li>
-                        <li class="hover:text-white transition-colors cursor-pointer">SEO Médico</li>
-                        <li class="hover:text-white transition-colors cursor-pointer">Asistentes IA</li>
-                        <li class="hover:text-white transition-colors cursor-pointer">Redes Sociales Médicas</li>
-                        <li class="hover:text-white transition-colors cursor-pointer">Reputación Online</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-6 text-emerald-300">Especialidades</h4>
-                    <ul class="space-y-3 text-gray-400">
-                        <li class="hover:text-white transition-colors cursor-pointer">Clínicas Privadas</li>
-                        <li class="hover:text-white transition-colors cursor-pointer">Consultas Médicas</li>
-                        <li class="hover:text-white transition-colors cursor-pointer">Centros Especializados</li>
-                        <li class="hover:text-white transition-colors cursor-pointer">Hospitales</li>
-                        <li class="hover:text-white transition-colors cursor-pointer">Telemedicina</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-6 text-blue-300">Síguenos</h4>
-                    <div class="flex space-x-4 mb-6">
-                        <a href="#" class="w-12 h-12 bg-gray-800 rounded-xl flex items-center justify-center hover:bg-blue-600 transition-all duration-300 hover:scale-110">📘</a>
-                        <a href="#" class="w-12 h-12 bg-gray-800 rounded-xl flex items-center justify-center hover:bg-pink-600 transition-all duration-300 hover:scale-110">📷</a>
-                        <a href="#" class="w-12 h-12 bg-gray-800 rounded-xl flex items-center justify-center hover:bg-blue-400 transition-all duration-300 hover:scale-110">🐦</a>
-                        <a href="#" class="w-12 h-12 bg-gray-800 rounded-xl flex items-center justify-center hover:bg-blue-700 transition-all duration-300 hover:scale-110">💼</a>
-                    </div>
-                    <div class="bg-gradient-to-r from-blue-600 to-teal-600 p-4 rounded-xl">
-                        <h5 class="font-semibold mb-2">📞 Contacto Directo</h5>
-                        <p class="text-sm text-blue-100 mb-2">+34 600 123 456</p>
-                        <p class="text-xs text-blue-200">Lun-Vie: 9:00-18:00</p>
+                <div class="border-t border-gray-700 mt-12 pt-8">
+                    <div class="flex flex-col md:flex-row justify-between items-center">
+                        <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                        &copy; 2024 HealthAI Marketing. Todos los derechos reservados. </p>
+                        <div class="flex space-x-6 text-sm text-gray-400"><a href="#" class="hover:text-white transition-colors">Política de Privacidad</a><a href="#" class="hover:text-white transition-colors">Términos de Servicio</a><a href="#" class="hover:text-white transition-colors">Cumplimiento GDPR</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="border-t border-gray-700 mt-12 pt-8">
-                <div class="flex flex-col md:flex-row justify-between items-center">
-                    <p class="text-gray-400 text-sm mb-4 md:mb-0">
-                        &copy; 2024 HealthAI Marketing. Todos los derechos reservados.
-                    </p>
-                    <div class="flex space-x-6 text-sm text-gray-400">
-                        <a href="#" class="hover:text-white transition-colors">Política de Privacidad</a>
-                        <a href="#" class="hover:text-white transition-colors">Términos de Servicio</a>
-                        <a href="#" class="hover:text-white transition-colors">Cumplimiento GDPR</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script>
+        </footer>
+        <script>
         function scrollToSection(sectionId) {
             document.getElementById(sectionId).scrollIntoView({
                 behavior: 'smooth'
@@ -722,5 +647,6 @@
             observer.observe(card);
         });
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96ec23f11319da6b',t:'MTc1NTEyOTI5NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+        <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96ec23f11319da6b',t:'MTc1NTEyOTI5NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+    </body>
 </html>
