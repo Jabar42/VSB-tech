@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VetDigital - Servicios Digitales para Veterinarios</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%); }
+        .gradient-secondary { background: linear-gradient(135deg, #1e40af 0%, #4f46e5 100%); }
+        .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20 relative overflow-hidden">
+        <!-- Background decoration -->
+        <div class="absolute top-0 left-0 w-full h-full opacity-10">
+            <div class="absolute top-10 left-10 w-20 h-20 border-2 border-white rounded-full"></div>
+            <div class="absolute top-32 right-20 w-16 h-16 border-2 border-white rounded-full"></div>
+            <div class="absolute bottom-20 left-1/4 w-12 h-12 border-2 border-white rounded-full"></div>
+        </div>
+        
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <!-- Urgency Badge -->
+            <div class="inline-flex items-center bg-red-500 text-white px-4 py-2 rounded-full text-sm font-semibold mb-6 animate-pulse">
+                🔥 OFERTA LIMITADA: Solo 10 citas gratuitas este mes
+            </div>
+            
+            <h1 class="text-5xl font-bold mb-6 leading-tight">
+                Digitaliza tu Clínica Veterinaria
+                <span class="block text-white text-4xl mt-2">y Aumenta tus Ingresos un 40%</span>
+            </h1>
+            
+            <p class="text-xl mb-8 max-w-3xl mx-auto opacity-90 leading-relaxed">
+                Más de <strong class="text-white">50 veterinarios</strong> ya están usando nuestros servicios digitales para automatizar citas, reducir ausencias y atraer nuevos clientes. 
+                <span class="block mt-2 text-lg">¡Tu competencia ya está un paso adelante!</span>
+            </p>
+
+            <!-- Trust Badges Row -->
+            <div class="flex flex-wrap justify-center items-center gap-6 mb-8 opacity-90">
+                <div class="flex items-center bg-white bg-opacity-20 px-4 py-2 rounded-lg">
+                    <span class="text-green-300 mr-2">✓</span>
+                    <span class="text-sm font-medium">Resultados en 48h</span>
+                </div>
+                <div class="flex items-center bg-white bg-opacity-20 px-4 py-2 rounded-lg">
+                    <span class="text-green-300 mr-2">✓</span>
+                    <span class="text-sm font-medium">Sin permanencia</span>
+                </div>
+                <div class="flex items-center bg-white bg-opacity-20 px-4 py-2 rounded-lg">
+                    <span class="text-green-300 mr-2">✓</span>
+                    <span class="text-sm font-medium">Soporte 24/7</span>
+                </div>
+                <div class="flex items-center bg-white bg-opacity-20 px-4 py-2 rounded-lg">
+                    <span class="text-green-300 mr-2">✓</span>
+                    <span class="text-sm font-medium">Garantía 30 días</span>
+                </div>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+                <button onclick="scrollToContact()" class="bg-white text-indigo-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition duration-300 shadow-lg transform hover:scale-105">
+                    🚀 Agenda Cita GRATIS Ahora
+                </button>
+                <button onclick="scrollToContact()" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-indigo-600 transition duration-300">
+                    Enviar Mensaje
+                </button>
+            </div>
+            
+            <!-- Urgency Timer -->
+            <div class="bg-red-600 bg-opacity-90 rounded-lg p-4 max-w-md mx-auto">
+                <p class="text-sm font-semibold mb-2">⏰ OFERTA ESPECIAL TERMINA EN:</p>
+                <div id="countdown" class="text-2xl font-bold">
+                    <span id="days">07</span>d : 
+                    <span id="hours">23</span>h : 
+                    <span id="minutes">45</span>m : 
+                    <span id="seconds">30</span>s
+                </div>
+                <p class="text-xs mt-2 opacity-90">Consulta GRATIS + configuración sin costo</p>
+            </div>
+
+            <!-- Social Proof Numbers -->
+            <div class="grid grid-cols-3 gap-8 max-w-2xl mx-auto mt-12 pt-8 border-t border-white border-opacity-30">
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-white">50+</div>
+                    <div class="text-sm opacity-80">Clínicas Activas</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-white">40%</div>
+                    <div class="text-sm opacity-80">Aumento Promedio</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-white">98%</div>
+                    <div class="text-sm opacity-80">Satisfacción</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pain Point & Solution Section -->
+    <section class="py-20 bg-gray-50 relative overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <!-- Pain Point Header -->
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-6">
+                        ¿Te sientes <span class="text-red-600">FRUSTRADO</span> con estos problemas diarios?
+                    </h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Sabemos exactamente por lo que estás pasando. Miles de veterinarios enfrentan los mismos desafíos cada día...
+                    </p>
+                </div>
+
+                <!-- Pain Points Grid -->
+                <div class="grid md:grid-cols-2 gap-12 mb-16">
+                    <!-- Left: Pain Points -->
+                    <div class="space-y-8">
+                        <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-indigo-500">
+                            <div class="flex items-start">
+                                <div class="text-3xl mr-4">😤</div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-800 mb-2">Teléfono que NO para de sonar</h3>
+                                    <p class="text-gray-600">Pierdes 2-3 horas diarias solo atendiendo llamadas para citas. Tu tiempo vale más que eso.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-indigo-500">
+                            <div class="flex items-start">
+                                <div class="text-3xl mr-4">💸</div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-800 mb-2">Clientes que NO aparecen</h3>
+                                    <p class="text-gray-600">30% de ausencias sin aviso. Cada cita perdida son €50-150 menos en tu bolsillo.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-indigo-500">
+                            <div class="flex items-start">
+                                <div class="text-3xl mr-4">📉</div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-800 mb-2">Competencia que te está ganando</h3>
+                                    <p class="text-gray-600">Otras clínicas ya tienen sistemas modernos. Tus clientes se van porque "es más fácil allí".</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-indigo-500">
+                            <div class="flex items-start">
+                                <div class="text-3xl mr-4">😰</div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-800 mb-2">Estrés constante por la gestión</h3>
+                                    <p class="text-gray-600">Agenda desorganizada, recordatorios manuales, marketing inexistente. Te sientes abrumado.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Demo Image -->
+                    <div class="flex flex-col justify-center">
+                        <div class="bg-white rounded-lg shadow-2xl p-4 mb-6">
+                            <div class="gradient-bg rounded-lg p-8 text-white text-center">
+                                <div class="text-6xl mb-4">📱</div>
+                                <h3 class="text-2xl font-bold mb-4">Demo de VetDigital</h3>
+                                <div class="bg-white bg-opacity-20 rounded-lg p-4 mb-4">
+                                    <div class="text-left space-y-2 text-sm">
+                                        <div class="flex justify-between">
+                                            <span>📅 Citas hoy:</span>
+                                            <span className="font-bold">12 confirmadas</span>
+                                        </div>
+                                        <div class="flex justify-between">
+                                            <span>📧 Recordatorios:</span>
+                                            <span className="font-bold">Automáticos</span>
+                                        </div>
+                                        <div class="flex justify-between">
+                                            <span>📈 Nuevos clientes:</span>
+                                            <span className="font-bold">+8 esta semana</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button onclick="scrollToContact()" class="bg-white text-indigo-600 px-6 py-2 rounded-lg font-bold hover:bg-gray-100 transition">
+                                    Agendar Cita
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Success Stats -->
+                        <div class="bg-green-100 border border-green-300 rounded-lg p-4 text-center">
+                            <div class="text-green-800 font-bold text-lg">✅ Resultados Reales de Nuestros Clientes:</div>
+                            <div class="grid grid-cols-2 gap-4 mt-3 text-sm">
+                                <div class="text-green-700">
+                                    <div class="font-bold text-xl">-60%</div>
+                                    <div>Llamadas diarias</div>
+                                </div>
+                                <div class="text-green-700">
+                                    <div class="font-bold text-xl">+40%</div>
+                                    <div>Ingresos mensuales</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Solution Reveal -->
+                <div class="gradient-bg rounded-2xl p-8 text-white text-center relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-white bg-opacity-10 rounded-full -mr-16 -mt-16"></div>
+                    <div class="absolute bottom-0 left-0 w-24 h-24 bg-white bg-opacity-10 rounded-full -ml-12 -mb-12"></div>
+                    
+                    <div class="relative z-10">
+                        <h2 class="text-3xl font-bold mb-4">
+                            🎯 ¡STOP! Hay una solución que cambiará tu clínica para SIEMPRE
+                        </h2>
+                        <p class="text-xl mb-6 opacity-90 max-w-3xl mx-auto">
+                            Imagínate: <strong>Sin llamadas constantes</strong>, <strong>citas que se confirman solas</strong>, 
+                            <strong>nuevos clientes llegando automáticamente</strong> y tú enfocado en lo que realmente importa: 
+                            <span class="text-white font-bold">cuidar animales y ganar más dinero.</span>
+                        </p>
+                        
+                        <!-- Transformation Promise -->
+                        <div class="bg-white bg-opacity-20 rounded-lg p-6 mb-6 max-w-4xl mx-auto">
+                            <h3 class="text-2xl font-bold mb-4 text-white">En solo 48 horas transformaremos tu clínica:</h3>
+                            <div class="grid md:grid-cols-3 gap-4 text-left">
+                                <div class="flex items-start">
+                                    <span class="text-green-300 mr-2 text-xl">✓</span>
+                                    <span>Agenda online funcionando 24/7</span>
+                                </div>
+                                <div class="flex items-start">
+                                    <span class="text-green-300 mr-2 text-xl">✓</span>
+                                    <span>Recordatorios automáticos por SMS/Email</span>
+                                </div>
+                                <div class="flex items-start">
+                                    <span class="text-green-300 mr-2 text-xl">✓</span>
+                                    <span>Campañas que atraen nuevos clientes</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Urgency CTA -->
+                        <div class="space-y-4">
+                            <div class="bg-red-600 bg-opacity-90 rounded-lg p-4 inline-block">
+                                <p class="font-bold text-lg">⚠️ ATENCIÓN: Solo quedan 3 citas gratuitas este mes</p>
+                                <p class="text-sm opacity-90">Tu competencia no va a esperar. ¿Vas a quedarte atrás?</p>
+                            </div>
+                            
+                            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                                <button onclick="scrollToContact()" class="bg-white text-indigo-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition transform hover:scale-105 shadow-lg">
+                                    🚀 SÍ, Quiero Mi Cita GRATIS Ahora
+                                </button>
+                                <button onclick="scrollToContact()" class="bg-transparent border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-indigo-600 transition">
+                                    Enviar Mensaje Ahora
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Risk Reversal -->
+                <div class="mt-12 text-center">
+                    <div class="bg-blue-50 border-2 border-blue-200 rounded-lg p-6 max-w-2xl mx-auto">
+                        <h3 class="text-xl font-bold text-blue-800 mb-3">🛡️ Garantía Total de Satisfacción</h3>
+                        <p class="text-blue-700">
+                            Si en 30 días no ves resultados concretos en tu clínica, 
+                            <strong>te devolvemos el 100% de tu dinero</strong>. Sin preguntas, sin complicaciones.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Oferta Completa VetDigital -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <!-- Header de la oferta -->
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                    🎯 PAQUETE COMPLETO VETDIGITAL
+                </div>
+                <h2 class="text-4xl font-bold mb-6 text-gray-800">
+                    Todo lo que necesitas para <span class="text-purple-600">digitalizar tu clínica</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+                    Un sistema completo que incluye <strong>6 herramientas profesionales</strong> diseñadas específicamente para clínicas veterinarias. 
+                    <span class="text-purple-600 font-semibold">Todo integrado, todo funcionando desde el día 1.</span>
+                </p>
+                
+                <!-- Precio y oferta especial -->
+                <div class="gradient-bg rounded-2xl p-8 text-white max-w-4xl mx-auto mb-12">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <div class="text-left">
+                            <h3 class="text-2xl font-bold mb-4">🚀 Oferta de Lanzamiento</h3>
+                            <div class="space-y-2">
+                                <div class="flex items-center">
+                                    <span class="line-through text-gray-300 text-xl mr-3">€497/mes</span>
+                                    <span class="bg-red-500 text-white px-2 py-1 rounded text-sm font-bold">-50%</span>
+                                </div>
+                                <div class="text-4xl font-bold text-yellow-300">€247/mes</div>
+                                <p class="text-sm opacity-90">Primer mes GRATIS + configuración incluida</p>
+                            </div>
+                        </div>
+                        <div class="text-center md:text-right">
+                            <div class="bg-white bg-opacity-20 rounded-lg p-4 mb-4">
+                                <div class="text-sm opacity-90 mb-1">Valor total del paquete:</div>
+                                <div class="text-2xl font-bold">€2,400/mes</div>
+                                <div class="text-sm opacity-90">si lo contrataras por separado</div>
+                            </div>
+                            <div class="text-green-300 font-bold">
+                                ¡Ahorras €2,153 cada mes!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grid de servicios incluidos -->
+            <div class="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto mb-16">
+                <!-- Servicio 1: Landing Page -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-indigo-500">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-indigo-500 rounded-lg flex items-center justify-center mr-4">
+                            <span class="text-white text-xl">🌐</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Landing Page Profesional</h3>
+                            <p class="text-indigo-600 font-semibold text-sm">Valor: €800</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2 mt-1">✓</span>
+                            <span>Diseño personalizado con tu marca</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2 mt-1">✓</span>
+                            <span>Optimizada para móviles y SEO</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2 mt-1">✓</span>
+                            <span>Formularios de contacto integrados</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2 mt-1">✓</span>
+                            <span>Hosting y dominio incluidos</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Servicio 2: Sistema de Reservas -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-indigo-500">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-indigo-500 rounded-lg flex items-center justify-center mr-4">
+                            <span class="text-white text-xl">📅</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Sistema de Reservas 24/7</h3>
+                            <p class="text-indigo-600 font-semibold text-sm">Valor: €600/mes</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2 mt-1">✓</span>
+                            <span>Agenda online automática</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2 mt-1">✓</span>
+                            <span>Sincronización con tu calendario</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2 mt-1">✓</span>
+                            <span>Gestión de horarios y servicios</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2 mt-1">✓</span>
+                            <span>Panel de administración completo</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Servicio 3: Agente IA -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-indigo-500">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-indigo-500 rounded-lg flex items-center justify-center mr-4">
+                            <span class="text-white text-xl">🤖</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Agente IA Inteligente</h3>
+                            <p class="text-indigo-600 font-semibold text-sm">Valor: €400/mes</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2 mt-1">✓</span>
+                            <span>Respuestas automáticas 24/7</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2 mt-1">✓</span>
+                            <span>Entrenado en veterinaria</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2 mt-1">✓</span>
+                            <span>Agenda citas automáticamente</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2 mt-1">✓</span>
+                            <span>Deriva casos complejos a ti</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Servicio 4: Asistente WhatsApp -->
+                <div class="bg-gradient-to-br from-orange-50 to-orange-100 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-orange-500">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center mr-4">
+                            <span class="text-white text-xl">💬</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Asistente WhatsApp</h3>
+                            <p class="text-orange-600 font-semibold text-sm">Valor: €300/mes</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2 mt-1">✓</span>
+                            <span>Chatbot inteligente en WhatsApp</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2 mt-1">✓</span>
+                            <span>Respuestas instantáneas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2 mt-1">✓</span>
+                            <span>Gestión de consultas básicas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2 mt-1">✓</span>
+                            <span>Integrado con tu número actual</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Servicio 5: Pauta en Redes -->
+                <div class="bg-gradient-to-br from-pink-50 to-pink-100 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-pink-500">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-pink-500 rounded-lg flex items-center justify-center mr-4">
+                            <span class="text-white text-xl">📱</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Publicidad en Redes</h3>
+                            <p class="text-pink-600 font-semibold text-sm">Valor: €500/mes</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2 mt-1">✓</span>
+                            <span>Campañas en Facebook e Instagram</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2 mt-1">✓</span>
+                            <span>Segmentación local precisa</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2 mt-1">✓</span>
+                            <span>Creativos profesionales incluidos</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2 mt-1">✓</span>
+                            <span>Optimización continua</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Servicio 6: Recordatorios WhatsApp -->
+                <div class="bg-gradient-to-br from-teal-50 to-teal-100 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-teal-500">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-teal-500 rounded-lg flex items-center justify-center mr-4">
+                            <span class="text-white text-xl">⏰</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Recordatorios WhatsApp</h3>
+                            <p class="text-teal-600 font-semibold text-sm">Valor: €200/mes</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2 mt-1">✓</span>
+                            <span>Recordatorios automáticos de citas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2 mt-1">✓</span>
+                            <span>Confirmaciones de asistencia</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2 mt-1">✓</span>
+                            <span>Seguimiento post-consulta</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2 mt-1">✓</span>
+                            <span>Mensajes personalizables</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bonus y garantías -->
+            <div class="bg-gradient-to-r from-yellow-400 to-orange-500 rounded-2xl p-8 text-white text-center mb-12">
+                <h3 class="text-2xl font-bold mb-6">🎁 BONUS EXCLUSIVOS (Valor €1,200)</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-white bg-opacity-20 rounded-lg p-4">
+                        <div class="text-3xl mb-2">⚡</div>
+                        <h4 class="font-bold mb-2">Configuración Express</h4>
+                        <p class="text-sm opacity-90">Todo listo en 48 horas (Valor: €500)</p>
+                    </div>
+                    <div class="bg-white bg-opacity-20 rounded-lg p-4">
+                        <div class="text-3xl mb-2">🎓</div>
+                        <h4 class="font-bold mb-2">Capacitación Completa</h4>
+                        <p class="text-sm opacity-90">Para ti y tu equipo (Valor: €400)</p>
+                    </div>
+                    <div class="bg-white bg-opacity-20 rounded-lg p-4">
+                        <div class="text-3xl mb-2">🛡️</div>
+                        <h4 class="font-bold mb-2">Soporte Premium</h4>
+                        <p class="text-sm opacity-90">3 meses gratis (Valor: €300)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Garantías -->
+            <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                <div class="text-center bg-green-50 p-6 rounded-lg border border-green-200">
+                    <div class="text-3xl mb-3">✅</div>
+                    <h4 class="font-bold text-gray-800 mb-2">Garantía 30 días</h4>
+                    <p class="text-sm text-gray-600">Si no ves resultados, te devolvemos todo tu dinero</p>
+                </div>
+                <div class="text-center bg-blue-50 p-6 rounded-lg border border-blue-200">
+                    <div class="text-3xl mb-3">🚀</div>
+                    <h4 class="font-bold text-gray-800 mb-2">Resultados en 48h</h4>
+                    <p class="text-sm text-gray-600">Tu sistema estará funcionando en menos de 2 días</p>
+                </div>
+                <div class="text-center bg-purple-50 p-6 rounded-lg border border-purple-200">
+                    <div class="text-3xl mb-3">🔒</div>
+                    <h4 class="font-bold text-gray-800 mb-2">Sin permanencia</h4>
+                    <p class="text-sm text-gray-600">Cancela cuando quieras, sin penalizaciones</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prueba Social -->
+    <section class="py-20 bg-gradient-to-br from-purple-50 via-blue-50 to-indigo-50 relative overflow-hidden">
+        <!-- Background decorations -->
+        <div class="absolute top-0 left-0 w-full h-full opacity-5">
+            <div class="absolute top-20 left-10 w-32 h-32 bg-purple-600 rounded-full"></div>
+            <div class="absolute bottom-20 right-10 w-24 h-24 bg-blue-600 rounded-full"></div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-indigo-600 rounded-full"></div>
+        </div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <!-- Header with animated stats -->
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                    🏆 Líderes en Digitalización Veterinaria
+                </div>
+                <h2 class="text-4xl font-bold mb-6 text-gray-800">
+                    Más de <span class="text-purple-600">50 clínicas</span> ya están 
+                    <span class="text-blue-600">transformando</span> sus negocios
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+                    Veterinarios de toda España están viendo resultados increíbles. 
+                    <strong>Sus historias hablan por sí solas...</strong>
+                </p>
+                
+                <!-- Animated client logos -->
+                <div class="flex flex-wrap justify-center items-center gap-6 mb-12">
+                    <div class="bg-white px-6 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full mr-3"></div>
+                            <span class="font-bold text-gray-800">Clínica VetSalud</span>
+                        </div>
+                        <div class="text-xs text-green-600 font-semibold mt-1">+45% ingresos</div>
+                    </div>
+                    <div class="bg-white px-6 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-gradient-to-r from-green-500 to-teal-500 rounded-full mr-3"></div>
+                            <span class="font-bold text-gray-800">Hospital Animal Plus</span>
+                        </div>
+                        <div class="text-xs text-green-600 font-semibold mt-1">-70% llamadas</div>
+                    </div>
+                    <div class="bg-white px-6 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-gradient-to-r from-orange-500 to-red-500 rounded-full mr-3"></div>
+                            <span class="font-bold text-gray-800">VetCare Centro</span>
+                        </div>
+                        <div class="text-xs text-green-600 font-semibold mt-1">98% satisfacción</div>
+                    </div>
+                    <div class="bg-white px-6 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full mr-3"></div>
+                            <span class="font-bold text-gray-800">Clínica Mascota Feliz</span>
+                        </div>
+                        <div class="text-xs text-green-600 font-semibold mt-1">+60% citas</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Enhanced testimonials grid -->
+            <div class="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto mb-16">
+                <!-- Testimonial 1 - Featured -->
+                <div class="lg:col-span-2 bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-l-4 border-purple-500">
+                    <div class="flex items-start mb-6">
+                        <div class="relative">
+                            <div class="w-16 h-16 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full flex items-center justify-center mr-6">
+                                <span class="text-white font-bold text-lg">MG</span>
+                            </div>
+                            <div class="absolute -bottom-1 -right-1 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+                                <span class="text-white text-xs">✓</span>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center mb-2">
+                                <h4 class="font-bold text-xl text-gray-800">Dr. María González</h4>
+                                <div class="ml-3 flex text-yellow-400">
+                                    ⭐⭐⭐⭐⭐
+                                </div>
+                            </div>
+                            <p class="text-purple-600 font-semibold">Clínica VetSalud • Madrid</p>
+                            <p class="text-sm text-gray-500">Cliente desde hace 8 meses</p>
+                        </div>
+                    </div>
+                    <blockquote class="text-gray-700 text-lg leading-relaxed mb-6 italic">
+                        "Antes perdía 3 horas diarias solo atendiendo llamadas para citas. Ahora mi agenda se llena automáticamente y mis clientes están encantados. 
+                        <strong class="text-purple-600">Mis ingresos aumentaron un 45% en solo 6 meses.</strong> 
+                        No puedo imaginar volver al sistema anterior."
+                    </blockquote>
+                    <div class="grid grid-cols-3 gap-4 bg-purple-50 rounded-lg p-4">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-purple-600">+45%</div>
+                            <div class="text-xs text-gray-600">Ingresos</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-green-600">-80%</div>
+                            <div class="text-xs text-gray-600">Llamadas</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-blue-600">24/7</div>
+                            <div class="text-xs text-gray-600">Disponible</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-l-4 border-green-500">
+                    <div class="flex items-center mb-4">
+                        <div class="relative">
+                            <div class="w-12 h-12 bg-gradient-to-r from-green-500 to-teal-500 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-white font-bold">CR</span>
+                            </div>
+                            <div class="absolute -bottom-1 -right-1 w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
+                                <span class="text-white text-xs">✓</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Dr. Carlos Ruiz</h4>
+                            <p class="text-green-600 font-semibold text-sm">Hospital Animal Plus</p>
+                            <div class="flex text-yellow-400 text-sm">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <blockquote class="text-gray-700 mb-4 italic">
+                        "Los recordatorios automáticos fueron un cambio total. Las ausencias se redujeron un 70% y ahora puedo enfocarme en lo que realmente importa: cuidar animales."
+                    </blockquote>
+                    <div class="bg-green-50 rounded-lg p-3">
+                        <div class="text-center">
+                            <div class="text-xl font-bold text-green-600">-70%</div>
+                            <div class="text-xs text-gray-600">Ausencias</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Second row of testimonials -->
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-12">
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow- xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-l-4 border-blue-500">
+                    <div class="flex items-center mb-4">
+                        <div class="relative">
+                            <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-white font-bold">AL</span>
+                            </div>
+                            <div class="absolute -bottom-1 -right-1 w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
+                                <span class="text-white text-xs">✓</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Dr. Ana López</h4>
+                            <p class="text-blue-600 font-semibold text-sm">VetCare Centro</p>
+                            <div class="flex text-yellow-400 text-sm">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <blockquote class="text-gray-700 mb-4 italic">
+                        "En 3 meses conseguí 40 nuevos clientes gracias a las campañas automáticas. Mi clínica nunca había estado tan llena."
+                    </blockquote>
+                    <div class="bg-blue-50 rounded-lg p-3 text-center">
+                        <div class="text-xl font-bold text-blue-600">+40</div>
+                        <div class="text-xs text-gray-600">Nuevos clientes</div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 4 -->
+                <div class="bg-white p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-l-4 border-orange-500">
+                    <div class="flex items-center mb-4">
+                        <div class="relative">
+                            <div class="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-white font-bold">JM</span>
+                            </div>
+                            <div class="absolute -bottom-1 -right-1 w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
+                                <span class="text-white text-xs">✓</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Dr. José Martín</h4>
+                            <p class="text-orange-600 font-semibold text-sm">Clínica Mascota Feliz</p>
+                            <div class="flex text-yellow-400 text-sm">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <blockquote class="text-gray-700 mb-4 italic">
+                        "Implementación súper rápida y soporte excepcional. En 48 horas ya estaba funcionando perfectamente."
+                    </blockquote>
+                    <div class="bg-orange-50 rounded-lg p-3 text-center">
+                        <div class="text-xl font-bold text-orange-600">48h</div>
+                        <div class="text-xs text-gray-600">Implementación</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Success metrics banner -->
+            <div class="bg-gradient-to-r from-purple-600 to-blue-600 rounded-2xl p-8 text-white text-center">
+                <h3 class="text-2xl font-bold mb-6">Resultados Promedio de Nuestros Clientes</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="bg-white bg-opacity-20 rounded-lg p-4">
+                        <div class="text-3xl font-bold text-yellow-300">+42%</div>
+                        <div class="text-sm opacity-90">Aumento de Ingresos</div>
+                    </div>
+                    <div class="bg-white bg-opacity-20 rounded-lg p-4">
+                        <div class="text-3xl font-bold text-yellow-300">-65%</div>
+                        <div class="text-sm opacity-90">Menos Llamadas</div>
+                    </div>
+                    <div class="bg-white bg-opacity-20 rounded-lg p-4">
+                        <div class="text-3xl font-bold text-yellow-300">+38</div>
+                        <div class="text-sm opacity-90">Nuevos Clientes/mes</div>
+                    </div>
+                    <div class="bg-white bg-opacity-20 rounded-lg p-4">
+                        <div class="text-3xl font-bold text-yellow-300">97%</div>
+                        <div class="text-sm opacity-90">Satisfacción</div>
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <button onclick="scrollToContact()" class="bg-yellow-400 text-gray-900 px-8 py-3 rounded-lg font-bold hover:bg-yellow-300 transition transform hover:scale-105">
+                        🚀 Agenda Mi Cita Ahora
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cómo Funciona -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Cómo funciona en 3 simples pasos</h2>
+            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-purple-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">1</div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Agenda tu Demo</h3>
+                    <p class="text-gray-600">Conversamos sobre las necesidades específicas de tu clínica</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-purple-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">2</div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Configuración Personalizada</h3>
+                    <p class="text-gray-600">Adaptamos nuestros servicios a tu clínica en menos de 48 horas</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-purple-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">3</div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Resultados Inmediatos</h3>
+                    <p class="text-gray-600">Comienza a ver más citas y clientes satisfechos desde el primer día</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preguntas Frecuentes -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <!-- Header -->
+                <div class="text-center mb-16">
+                    <div class="inline-flex items-center bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                        ❓ Preguntas Frecuentes
+                    </div>
+                    <h2 class="text-4xl font-bold mb-6 text-gray-800">
+                        Resolvemos todas tus <span class="text-indigo-600">dudas</span>
+                    </h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Estas son las preguntas más comunes que nos hacen los veterinarios. 
+                        <strong>Si tienes alguna otra duda, ¡contáctanos!</strong>
+                    </p>
+                </div>
+
+                <!-- FAQ Items -->
+                <div class="space-y-6">
+                    <!-- FAQ 1 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <button class="w-full px-8 py-6 text-left focus:outline-none focus:ring-2 focus:ring-indigo-500 faq-button" onclick="toggleFAQ(1)">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-lg font-semibold text-gray-800">
+                                    ¿Cuánto tiempo tarda en implementarse todo el sistema?
+                                </h3>
+                                <span class="text-indigo-600 text-2xl faq-icon" id="icon-1">+</span>
+                            </div>
+                        </button>
+                        <div class="faq-content hidden px-8 pb-6" id="content-1">
+                            <div class="border-t border-gray-200 pt-4">
+                                <p class="text-gray-700 leading-relaxed">
+                                    <strong class="text-indigo-600">En menos de 48 horas</strong> tendrás todo funcionando. Nuestro proceso es:
+                                </p>
+                                <ul class="mt-3 space-y-2 text-gray-700">
+                                    <li class="flex items-start">
+                                        <span class="text-green-500 mr-2 mt-1">✓</span>
+                                        <span><strong>Día 1:</strong> Configuración de tu landing page y sistema de reservas</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-green-500 mr-2 mt-1">✓</span>
+                                        <span><strong>Día 2:</strong> Integración del chatbot IA y recordatorios WhatsApp</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-green-500 mr-2 mt-1">✓</span>
+                                        <span><strong>Día 3:</strong> Lanzamiento de campañas publicitarias y capacitación final</span>
+                                    </li>
+                                </ul>
+                                <p class="mt-3 text-gray-700">
+                                    <strong>¡Y empiezas a recibir citas automáticas desde el primer día!</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <button class="w-full px-8 py-6 text-left focus:outline-none focus:ring-2 focus:ring-indigo-500 faq-button" onclick="toggleFAQ(2)">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-lg font-semibold text-gray-800">
+                                    ¿Necesito conocimientos técnicos para usar el sistema?
+                                </h3>
+                                <span class="text-indigo-600 text-2xl faq-icon" id="icon-2">+</span>
+                            </div>
+                        </button>
+                        <div class="faq-content hidden px-8 pb-6" id="content-2">
+                            <div class="border-t border-gray-200 pt-4">
+                                <p class="text-gray-700 leading-relaxed">
+                                    <strong class="text-indigo-600">¡Para nada!</strong> Nuestro sistema está diseñado para ser súper fácil de usar:
+                                </p>
+                                <ul class="mt-3 space-y-2 text-gray-700">
+                                    <li class="flex items-start">
+                                        <span class="text-green-500 mr-2 mt-1">✓</span>
+                                        <span>Nosotros configuramos todo por ti</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-green-500 mr-2 mt-1">✓</span>
+                                        <span>Interfaz intuitiva, como usar WhatsApp</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-green-500 mr-2 mt-1">✓</span>
+                                        <span>Capacitación completa incluida</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-green-500 mr-2 mt-1">✓</span>
+                                        <span>Soporte técnico 24/7</span>
+                                    </li>
+                                </ul>
+                                <p class="mt-3 text-gray-700">
+                                    Si sabes usar un smartphone, puedes usar nuestro sistema sin problemas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <button class="w-full px-8 py-6 text-left focus:outline-none focus:ring-2 focus:ring-indigo-500 faq-button" onclick="toggleFAQ(3)">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-lg font-semibold text-gray-800">
+                                    ¿Qué pasa si no veo resultados?
+                                </h3>
+                                <span class="text-indigo-600 text-2xl faq-icon" id="icon-3">+</span>
+                            </div>
+                        </button>
+                        <div class="faq-content hidden px-8 pb-6" id="content-3">
+                            <div class="border-t border-gray-200 pt-4">
+                                <p class="text-gray-700 leading-relaxed">
+                                    Tenemos una <strong class="text-indigo-600">garantía de satisfacción del 100%</strong>:
+                                </p>
+                                <div class="mt-4 bg-green-50 border border-green-200 rounded-lg p-4">
+                                    <div class="flex items-start">
+                                        <span class="text-green-500 text-2xl mr-3">🛡️</span>
+                                        <div>
+                                            <h4 class="font-bold text-green-800 mb-2">Garantía de 30 días</h4>
+                                            <p class="text-green-700 text-sm">
+                                                Si en 30 días no ves un aumento en tus citas o una reducción significativa en llamadas, 
+                                                <strong>te devolvemos el 100% de tu dinero</strong>. Sin preguntas, sin complicaciones.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="mt-3 text-gray-700">
+                                    Pero estamos seguros de que verás resultados. <strong>El 98% de nuestros clientes renuevan cada mes.</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <button class="w-full px-8 py-6 text-left focus:outline-none focus:ring-2 focus:ring-indigo-500 faq-button" onclick="toggleFAQ(4)">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-lg font-semibold text-gray-800">
+                                    ¿Se integra con mi sistema actual de gestión?
+                                </h3>
+                                <span class="text-indigo-600 text-2xl faq-icon" id="icon-4">+</span>
+                            </div>
+                        </button>
+                        <div class="faq-content hidden px-8 pb-6" id="content-4">
+                            <div class="border-t border-gray-200 pt-4">
+                                <p class="text-gray-700 leading-relaxed">
+                                    <strong class="text-indigo-600">¡Por supuesto!</strong> Trabajamos con los principales sistemas veterinarios:
+                                </p>
+                                <ul class="mt-3 space-y-2 text-gray-700">
+                                    <li class="flex items-start">
+                                        <span class="text-green-500 mr-2 mt-1">✓</span>
+                                        <span>VetManager, Veterinaria Plus, CliniVet</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-green-500 mr-2 mt-1">✓</span>
+                                        <span>Sincronización automática de citas</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-green-500 mr-2 mt-1">✓</span>
+                                        <span>Importación de datos de clientes</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-green-500 mr-2 mt-1">✓</span>
+                                        <span>Si usas otro sistema, también podemos integrarlo</span>
+                                    </li>
+                                </ul>
+                                <p class="mt-3 text-gray-700">
+                                    No tendrás que cambiar tu forma de trabajar, solo la mejoraremos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 5 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <button class="w-full px-8 py-6 text-left focus:outline-none focus:ring-2 focus:ring-indigo-500 faq-button" onclick="toggleFAQ(5)">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-lg font-semibold text-gray-800">
+                                    ¿Hay permanencia o puedo cancelar cuando quiera?
+                                </h3>
+                                <span class="text-indigo-600 text-2xl faq-icon" id="icon-5">+</span>
+                            </div>
+                        </button>
+                        <div class="faq-content hidden px-8 pb-6" id="content-5">
+                            <div class="border-t border-gray-200 pt-4">
+                                <p class="text-gray-700 leading-relaxed">
+                                    <strong class="text-indigo-600">Sin permanencia.</strong> Puedes cancelar cuando quieras:
+                                </p>
+                                <ul class="mt-3 space-y-2 text-gray-700">
+                                    <li class="flex items-start">
+                                        <span class="text-green-500 mr-2 mt-1">✓</span>
+                                        <span>Contrato mensual, sin ataduras</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-green-500 mr-2 mt-1">✓</span>
+                                        <span>Cancela con 30 días de aviso</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-green-500 mr-2 mt-1">✓</span>
+                                        <span>Sin penalizaciones ni costos ocultos</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-green-500 mr-2 mt-1">✓</span>
+                                        <span>Mantienes tu landing page y datos</span>
+                                    </li>
+                                </ul>
+                                <p class="mt-3 text-gray-700">
+                                    Pero estamos seguros de que no querrás cancelar cuando veas los resultados.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 6 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <button class="w-full px-8 py-6 text-left focus:outline-none focus:ring-2 focus:ring-indigo-500 faq-button" onclick="toggleFAQ(6)">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-lg font-semibold text-gray-800">
+                                    ¿Qué tipo de soporte ofrecen?
+                                </h3>
+                                <span class="text-indigo-600 text-2xl faq-icon" id="icon-6">+</span>
+                            </div>
+                        </button>
+                        <div class="faq-content hidden px-8 pb-6" id="content-6">
+                            <div class="border-t border-gray-200 pt-4">
+                                <p class="text-gray-700 leading-relaxed">
+                                    <strong class="text-indigo-600">Soporte completo</strong> para que nunca te sientas solo:
+                                </p>
+                                <ul class="mt-3 space-y-2 text-gray-700">
+                                    <li class="flex items-start">
+                                        <span class="text-green-500 mr-2 mt-1">✓</span>
+                                        <span>Chat en vivo 24/7</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-green-500 mr-2 mt-1">✓</span>
+                                        <span>Teléfono directo con nuestro equipo</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-green-500 mr-2 mt-1">✓</span>
+                                        <span>Videollamadas para resolver dudas</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-green-500 mr-2 mt-1">✓</span>
+                                        <span>Actualizaciones y mejoras automáticas</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-green-500 mr-2 mt-1">✓</span>
+                                        <span>Capacitación continua para tu equipo</span>
+                                    </li>
+                                </ul>
+                                <p class="mt-3 text-gray-700">
+                                    Nuestro tiempo de respuesta promedio es de <strong>menos de 2 horas</strong>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 7 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <button class="w-full px-8 py-6 text-left focus:outline-none focus:ring-2 focus:ring-indigo-500 faq-button" onclick="toggleFAQ(7)">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-lg font-semibold text-gray-800">
+                                    ¿Funciona para clínicas pequeñas o solo para grandes?
+                                </h3>
+                                <span class="text-indigo-600 text-2xl faq-icon" id="icon-7">+</span>
+                            </div>
+                        </button>
+                        <div class="faq-content hidden px-8 pb-6" id="content-7">
+                            <div class="border-t border-gray-200 pt-4">
+                                <p class="text-gray-700 leading-relaxed">
+                                    <strong class="text-indigo-600">¡Para todas!</strong> Nuestro sistema se adapta a cualquier tamaño:
+                                </p>
+                                <div class="mt-4 grid md:grid-cols-2 gap-4">
+                                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                                        <h4 class="font-bold text-blue-800 mb-2">🏥 Clínicas Pequeñas (1-2 veterinarios)</h4>
+                                        <ul class="text-sm text-blue-700 space-y-1">
+                                            <li>• Automatización básica</li>
+                                            <li>• Agenda simple y efectiva</li>
+                                            <li>• Ideal para empezar a crecer</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-purple-50 border border-purple-200 rounded-lg p-4">
+                                        <h4 class="font-bold text-purple-800 mb-2">🏢 Clínicas Grandes (3+ veterinarios)</h4>
+                                        <ul class="text-sm text-purple-700 space-y-1">
+                                            <li>• Múltiples especialistas</li>
+                                            <li>• Gestión avanzada de horarios</li>
+                                            <li>• Campañas más agresivas</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p class="mt-3 text-gray-700">
+                                    <strong>El 70% de nuestros clientes son clínicas de 1-3 veterinarios</strong> que han logrado crecer significativamente.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 8 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <button class="w-full px-8 py-6 text-left focus:outline-none focus:ring-2 focus:ring-indigo-500 faq-button" onclick="toggleFAQ(8)">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-lg font-semibold text-gray-800">
+                                    ¿Realmente funciona o es solo marketing?
+                                </h3>
+                                <span class="text-indigo-600 text-2xl faq-icon" id="icon-8">+</span>
+                            </div>
+                        </button>
+                        <div class="faq-content hidden px-8 pb-6" id="content-8">
+                            <div class="border-t border-gray-200 pt-4">
+                                <p class="text-gray-700 leading-relaxed">
+                                    <strong class="text-indigo-600">Los números hablan por sí solos:</strong>
+                                </p>
+                                <div class="mt-4 bg-green-50 border border-green-200 rounded-lg p-4">
+                                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                                        <div>
+                                            <div class="text-2xl font-bold text-green-600">50+</div>
+                                            <div class="text-xs text-green-700">Clínicas activas</div>
+                                        </div>
+                                        <div>
+                                            <div class="text-2xl font-bold text-green-600">98%</div>
+                                            <div class="text-xs text-green-700">Tasa de renovación</div>
+                                        </div>
+                                        <div>
+                                            <div class="text-2xl font-bold text-green-600">+42%</div>
+                                            <div class="text-xs text-green-700">Aumento promedio</div>
+                                        </div>
+                                        <div>
+                                            <div class="text-2xl font-bold text-green-600">4.9/5</div>
+                                            <div class="text-xs text-green-700">Satisfacción</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="mt-3 text-gray-700">
+                                    Además, puedes hablar directamente con algunos de nuestros clientes actuales. 
+                                    <strong>Te daremos referencias reales en tu cita gratuita.</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA después de FAQ -->
+                <div class="mt-16 text-center">
+                    <div class="bg-indigo-50 border border-indigo-200 rounded-2xl p-8">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">
+                            ¿Tienes más preguntas?
+                        </h3>
+                        <p class="text-gray-600 mb-6">
+                            Agenda tu cita gratuita y resolvemos todas tus dudas personalmente. 
+                            <strong>Sin compromiso, sin presión.</strong>
+                        </p>
+                        <button onclick="scrollToContact()" class="gradient-bg text-white px-8 py-4 rounded-lg font-bold text-lg hover:opacity-90 transition transform hover:scale-105 shadow-lg">
+                            🗣️ Hablar con un Experto GRATIS
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 gradient-bg text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-4">¿Listo para digitalizar tu clínica?</h2>
+            <p class="text-xl mb-8 opacity-90">Únete a más de 50 veterinarios que ya están creciendo con VetDigital</p>
+            <button onclick="scrollToContact()" class="bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition duration-300 shadow-lg">
+                Agenda tu Cita Gratuita
+            </button>
+        </div>
+    </section>
+
+    <!-- Formulario de Contacto -->
+    <section id="contact" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="max-w-2xl mx-auto bg-white rounded-lg shadow-lg p-8">
+                <h2 class="text-3l font-bold text-center mb-8 text-gray-800">Agenda tu Cita Gratuita</h2>
+                <form id="contactForm" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Nombre Completo *</label>
+                            <input type="text" id="nombre" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Email *</label>
+                            <input type="email" id="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 font-semibold mb-2">Nombre de la Clínica *</label>
+                        <input type="text" id="clinica" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 font-semibold mb-2">Teléfono</label>
+                        <input type="tel" id="telefono" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 font-semibold mb-2">¿Qué servicios te interesan más?</label>
+                        <textarea id="mensaje" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent" placeholder="Cuéntanos sobre las necesidades de tu clínica..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full gradient-bg text-white py-4 rounded-lg font-semibold text-lg hover:opacity-90 transition duration-300">
+                        Enviar Solicitud
+                    </button>
+                </form>
+                <div id="successMessage" class="hidden mt-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg">
+                    ¡Gracias! Hemos recibido tu solicitud. Nos pondremos en contacto contigo en las próximas 24 horas.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">VetDigital</h3>
+                    <p class="text-gray-300">Especializados en servicios digitales para clínicas veterinarias. Ayudamos a veterinarios a crecer y modernizar sus prácticas.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contacto</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <p>📧 info@vetdigital.com</p>
+                        <p>📞 +34 900 123 456</p>
+                        <p>📍 Madrid, España</p>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Legal</h4>
+                    <div class="space-y-2">
+                        <a href="#" class="text-gray-300 hover:text-white transition">Política de Privacidad</a><br>
+                        <a href="#" class="text-gray-300 hover:text-white transition">Términos y Condiciones</a><br>
+                        <a href="#" class="text-gray-300 hover:text-white transition">Aviso Legal</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 VetDigital. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function scrollToContact() {
+            document.getElementById('contact').scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        }
+
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = {
+                nombre: document.getElementById('nombre').value,
+                email: document.getElementById('email').value,
+                clinica: document.getElementById('clinica').value,
+                telefono: document.getElementById('telefono').value,
+                mensaje: document.getElementById('mensaje').value
+            };
+            
+            document.getElementById('contactForm').style.display = 'none';
+            document.getElementById('successMessage').classList.remove('hidden');
+            
+            console.log('Form submitted:', formData);
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        function updateCountdown() {
+            const targetDate = new Date();
+            targetDate.setDate(targetDate.getDate() + 7);
+            targetDate.setHours(23, 59, 59, 999);
+            
+            const now = new Date().getTime();
+            const distance = targetDate.getTime() - now;
+            
+            if (distance > 0) {
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+                document.getElementById('days').textContent = days.toString().padStart(2, '0');
+                document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+                document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+                document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+            }
+        }
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+
+        function toggleFAQ(faqNumber) {
+            const content = document.getElementById(`content-${faqNumber}`);
+            const icon = document.getElementById(`icon-${faqNumber}`);
+            
+            if (content.classList.contains('hidden')) {
+                for (let i = 1; i <= 8; i++) {
+                    if (i !== faqNumber) {
+                        document.getElementById(`content-${i}`).classList.add('hidden');
+                        document.getElementById(`icon-${i}`).textContent = '+';
+                    }
+                }
+                
+                content.classList.remove('hidden');
+                icon.textContent = '−';
+            } else {
+                content.classList.add('hidden');
+                icon.textContent = '+';
+            }
+        }
+    </script>
+</body>
+</html>

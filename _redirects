@@ -1,6 +1,11 @@
-/digitaliza-tu-clinica-veterinaria /digitaliza-tu-clinica-veterinaria/index.html 200
-/digitaliza-tu-clinica-veterinaria/ /digitaliza-tu-clinica-veterinaria/index.html 200
-/masterclass /masterclass/ 301
-/politica-de-privacidad /politica-de-privacidad/ 301
-/terminos-y-condiciones /terminos-y-condiciones/ 301
-/video /video/ 301
+/digitaliza-tu-clinica-veterinaria /digitaliza-tu-clinica-veterinaria.html 200
+/digitaliza-tu-clinica-veterinaria/ /digitaliza-tu-clinica-veterinaria.html 200
+/digitaliza-tu-clinica-veterinaria/* /digitaliza-tu-clinica-veterinaria.html 200
+/masterclass /masterclass/index.html 200
+/masterclass/ /masterclass/index.html 200
+/politica-de-privacidad /politica-de-privacidad/index.html 200
+/politica-de-privacidad/ /politica-de-privacidad/index.html 200
+/terminos-y-condiciones /terminos-y-condiciones/index.html 200
+/terminos-y-condiciones/ /terminos-y-condiciones/index.html 200
+/video /video/index.html 200
+/video/ /video/index.html 200
